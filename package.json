@@ -1,0 +1,12 @@
+{
+  "name": "democratic-party-crosscurrents",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:data": "node scripts/build-data.mjs",
+    "check": "node scripts/validate-data.mjs && node --check src/app.js",
+    "refresh:fec": "node scripts/refresh-fec.mjs",
+    "test": "npm run build:data && npm run check"
+  }
+}
