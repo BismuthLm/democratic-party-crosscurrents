@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A source-first dashboard of Democratic Party coalition debates." />
+    <title>Democratic Party Crosscurrents</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="eyebrow">COALITION INTELLIGENCE / BETA</p>
+      <h1>Crosscurrents</h1>
+      <p class="dek">A source-first view of the Democratic coalition’s open questions, strategic disagreements, and points of alignment.</p>
+    </header>
+
+    <main>
+      <section class="orientation" aria-labelledby="read-title">
+        <div>
+          <p class="eyebrow">HOW TO READ THIS</p>
+          <h2 id="read-title">Debate is not collapse.</h2>
+        </div>
+        <p>This project avoids treating broad labels as teams. Each signal is evidence of a specific disagreement or alignment, with its source and confidence shown beside it.</p>
+      </section>
+
+      <section class="controls" aria-label="Tracker controls">
+        <label>Issue <select id="issue-filter"><option value="all">All issues</option></select></label>
+        <label>View <select id="type-filter"><option value="all">All signals</option><option value="tension">Tensions</option><option value="alignment">Alignments</option></select></label>
+        <label class="search">Search <input id="search" type="search" placeholder="e.g. affordability" /></label>
+      </section>
+
+      <section class="metrics" aria-label="Tracker summary">
+        <div><strong id="signal-count">0</strong><span>signals shown</span></div>
+        <div><strong id="issue-count">0</strong><span>issues tracked</span></div>
+        <div><strong id="review-count">0</strong><span>need review</span></div>
+      </section>
+
+      <section aria-labelledby="signals-title">
+        <div class="section-heading"><p class="eyebrow">LIVE LOG</p><h2 id="signals-title">Signals, not verdicts</h2></div>
+        <div id="signal-list" class="signal-list"></div>
+      </section>
+
+      <section class="method" aria-labelledby="method-title">
+        <p class="eyebrow">METHOD</p>
+        <h2 id="method-title">What belongs here?</h2>
+        <div class="method-grid"><p><strong>Include</strong> documented votes, official statements, party rules, campaign messaging, and reporting with named sourcing.</p><p><strong>Exclude</strong> factional shorthand used as fact, one-off online fights, and claims that cannot be traced.</p><p><strong>Review</strong> starter entries are interface examples. Replace them with fresh reporting before treating the tracker as a live product.</p></div>
+      </section>
+    </main>
+    <footer><span>Built for careful political reading.</span><span id="updated"></span></footer>
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>
