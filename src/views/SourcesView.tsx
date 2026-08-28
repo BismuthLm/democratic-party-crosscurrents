@@ -1,0 +1,36 @@
+import { useMemo } from "react";
+import type { ColumnDef } from "@tanstack/react-table";
+import type { AppData } from "../appData";
+import type { InspectorSelection, SourceRecord } from "../types";
+import type { ResearchState } from "../lib/urlState";
+import { publicDownloadUrl } from "../lib/data";
+import { exportCsv } from "../lib/export";
+import { VirtualTable } from "../components/VirtualTable";
+import { EvidenceBadge, SectionHeading } from "./shared";
+
+interface SourceRow extends SourceRecord { claimCount: number; documentCount: number }
+
+export function SourcesView({ data, state, onSelect }: { data: AppData; state: ResearchState; onSelect: (selection: InspectorSelection) => void }) {
+  const rows = useMemo<SourceRow[]>(() => data.sources.map((source) => ({ ...source, claimCount: data.evidence.filter((record) => record.sourceId === source.id).length + data.metricObservations.filter((record) => record.sourceIds.includes(source.id) && (!state.camps.length || state.camps.includes(record.campId))).length, documentCount: 1 })).filter((source) => {
+    const sourceDate = source.publicationDate ?? source.retrievedAt.slice(0, 10);
+    if (sourceDate < state.from || sourceDate > state.to) return false;
+    return !state.search || `${source.publisher} ${source.title} ${source.kind} ${source.reviewStatus}`.toLowerCase().includes(state.search.toLowerCase());
+  }), [data.sources, data.evidence, data.metricObservations, state.search, state.from, state.to, state.camps]);
+  const columns = useMemo<ColumnDef<SourceRow, unknown>[]>(() => [
+    { accessorKey: "publisher", header: "Publisher", size: 190, cell: ({ row }) => <span className="primary-cell"><strong>{row.original.publisher}</strong><small>{row.original.kind.replaceAll("_", " ")}</small></span> },
+    { accessorKey: "title", header: "Source / document", size: 300 },
+    { accessorKey: "publicationDate", header: "Published", size: 95, cell: ({ getValue }) => String(getValue() ?? "Not dated") },
+    { accessorKey: "retrievedAt", header: "Retrieved", size: 105, cell: ({ getValue }) => String(getValue() ?? "—").slice(0, 10) },
+    { accessorKey: "claimCount", header: "Linked claims", size: 95 },
+    { accessorKey: "reviewStatus", header: "Review", size: 160, cell: ({ getValue }) => String(getValue()).replaceAll("_", " ") },
+    { accessorKey: "license", header: "Reuse note", size: 300 },
+  ], []);
+  const evidenceRows = data.evidence.filter((record) => state.evidence === "all" || record.evidenceGrade !== "D").slice(0, 50);
+  const metricClaims = data.metricObservations.filter((record) => record.periodEnd >= state.from && (record.periodStart ?? record.periodEnd) <= state.to && (!state.camps.length || state.camps.includes(record.campId)) && (state.evidence === "all" || record.evidenceGrade !== "D")).slice(0, 50);
+
+  return <div className="view-stack"><div className="quality-summary-grid"><article><span>Release</span><strong>{data.manifest.releaseId}</strong><p>schema {data.manifest.schemaVersion} · method {data.manifest.methodVersion}</p></article><article><span>Source records</span><strong>{data.quality.counts.sources.toLocaleString()}</strong><p>{data.quality.counts.legacySourcesMigrated} migrated without loss</p></article><article><span>Evidence links</span><strong>{data.quality.counts.evidenceRecords.toLocaleString()}</strong><p>direct, corroborated, derived, and disputed</p></article><article><span>FEC import</span><strong>100%</strong><p>eligible official 2018–2022 Democratic primary rows</p></article></div>
+    <section className="research-card"><SectionHeading eyebrow="SOURCE LEDGER" title={`${rows.length} filtered sources`} description="Government workbooks retain hashes and parser versions; organization claims retain review status and field locators." action={<button className="quiet-button" type="button" onClick={() => exportCsv(rows as unknown as Record<string, unknown>[], "source-ledger.csv")}>Export source ledger</button>} /><VirtualTable data={rows} columns={columns} height={500} ariaLabel="Source ledger" onSelect={(source) => onSelect({ kind: "source", id: source.id, title: source.title, subtitle: source.publisher, record: source as unknown as Record<string, unknown>, sourceIds: [source.id] })} /></section>
+    <div className="sources-columns"><section className="research-card"><SectionHeading eyebrow="SOURCE → CLAIM" title="Reverse evidence lookup" description="Direct facts and migrated metric claims both retain their source chain; legacy sources are no longer shown as zero-claim records." /><div className="evidence-ledger">{metricClaims.map((record) => { const definition = data.metricDefinitions.find((item) => item.id === record.metricId); const camp = data.camps.find((item) => item.id === record.campId); return <button type="button" key={`metric-${record.id}`} onClick={() => onSelect({ kind: "metric claim", id: record.id, title: `${definition?.label} · ${camp?.shortName}`, subtitle: record.methodVersion, record: record as unknown as Record<string, unknown>, sourceIds: record.sourceIds })}><EvidenceBadge grade={record.evidenceGrade} status={record.reviewStatus} /><div><strong>metric observation</strong><p>{definition?.label} · {camp?.shortName}</p><small>{record.sourceIds.length} linked source{record.sourceIds.length === 1 ? "" : "s"}</small></div></button>; })}{evidenceRows.map((record) => <button type="button" key={record.id} onClick={() => onSelect({ kind: "evidence record", id: record.id, title: record.factId, subtitle: record.factType.replaceAll("_", " "), record: record as unknown as Record<string, unknown>, sourceIds: record.sourceId ? [record.sourceId] : [] })}><EvidenceBadge grade={record.evidenceGrade} status={record.reviewStatus} /><div><strong>{record.factType.replaceAll("_", " ")}</strong><p>{record.factId}</p><small>{record.locator}</small></div></button>)}</div></section>
+    <aside className="research-card"><SectionHeading eyebrow="PUBLIC ARTIFACTS" title="Download the release" description="SQLite supports joins and guided external analysis; zipped CSV mirrors the same release." /><div className="download-list">{data.manifest.downloads.map((artifact) => <a key={artifact.path} href={publicDownloadUrl(artifact.path)} download><div><strong>{artifact.path.endsWith(".sqlite") ? "SQLite research database" : "Core CSV bundle"}</strong><span>{(artifact.bytes / 1024 / 1024).toFixed(1)} MB · SHA-256</span><code>{artifact.sha256.slice(0, 20)}…</code></div><b>↓</b></a>)}</div><div className="coverage-audit"><h3>Coverage grid</h3>{data.quality.coverage.map((item) => <button type="button" key={item.cycle} onClick={() => onSelect({ kind: "coverage record", id: `coverage-${item.cycle}`, title: `${item.cycle} coverage`, subtitle: item.status.replaceAll("_", " "), record: item as unknown as Record<string, unknown> })}><span>{item.cycle}</span><strong>{item.denominatorEligible ? "eligible" : "excluded"}</strong><small>{item.importedRows ? `${item.importedRows}/${item.eligibleDemocraticPrimaryRows} rows` : item.reason}</small></button>)}</div><div className="exclusion-box"><h3>Excluded licensed or sensitive data</h3>{data.quality.exclusions.map((item) => <p key={item}>{item}</p>)}</div></aside></div>
+  </div>;
+}

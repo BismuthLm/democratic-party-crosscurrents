@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "3.0.0",
+  "methodVersion": "balanced-core-v1",
+  "releaseSeries": "v3",
+  "title": "Democratic Faction Research Workbench",
+  "scope": "Federal House and Senate activity from 2018 onward; state and local records are labelled contextual case studies.",
+  "generatedOn": "2026-08-28",
+  "reviewedThrough": "2026-08-28",
+  "evidenceGrades": [
+    { "id": "A", "label": "Direct", "weight": 1, "description": "Official roster, announcement, filing, government result, or first-person statement." },
+    { "id": "B", "label": "Corroborated", "weight": 0.8, "description": "Historical official artifact or two independent established sources." },
+    { "id": "C", "label": "Derived", "weight": null, "description": "Deterministic result from reviewed A or B evidence; inherits the weakest trigger." },
+    { "id": "D", "label": "Disputed or stale", "weight": 0, "description": "Visible for research but excluded from published comparisons." }
+  ],
+  "organizations": [
+    { "id": "congressional_progressive_caucus", "name": "Congressional Progressive Caucus", "shortName": "CPC", "type": "formal_caucus", "officialUrl": "https://progressives.house.gov/about-the-cpc" },
+    { "id": "cpc_pac", "name": "Congressional Progressive Caucus PAC", "shortName": "CPC PAC", "type": "pac", "officialUrl": "https://weareprogressives.org/" },
+    { "id": "new_democrat_coalition", "name": "New Democrat Coalition", "shortName": "NDC", "type": "formal_caucus", "officialUrl": "https://newdemocratcoalition.house.gov/about-us" },
+    { "id": "newdem_action_fund", "name": "NewDem Action Fund", "shortName": "NewDem Action", "type": "pac", "officialUrl": "https://newdemactionfund.com/" },
+    { "id": "blue_dog_coalition", "name": "Blue Dog Coalition", "shortName": "Blue Dogs", "type": "formal_caucus", "officialUrl": "https://bluedogs-gluesenkampperez.house.gov/about" },
+    { "id": "blue_dog_pac", "name": "Blue Dog PAC", "shortName": "Blue Dog PAC", "type": "pac", "officialUrl": "https://bluedogdems.com/" },
+    { "id": "dsa_national", "name": "Democratic Socialists of America", "shortName": "DSA", "type": "movement_organization", "officialUrl": "https://www.dsausa.org/" },
+    { "id": "nyc_dsa", "name": "New York City Democratic Socialists of America", "shortName": "NYC-DSA", "type": "movement_organization", "officialUrl": "https://socialists.nyc/" },
+    { "id": "justice_democrats", "name": "Justice Democrats", "shortName": "Justice Democrats", "type": "endorsement_organization", "officialUrl": "https://justicedemocrats.com/candidates/" },
+    { "id": "working_families_party", "name": "Working Families Party", "shortName": "WFP", "type": "endorsement_organization", "officialUrl": "https://workingfamilies.org/" },
+    { "id": "our_revolution", "name": "Our Revolution", "shortName": "Our Revolution", "type": "endorsement_organization", "officialUrl": "https://ourrevolution.com/" },
+    { "id": "dccc", "name": "Democratic Congressional Campaign Committee", "shortName": "DCCC", "type": "party_committee", "officialUrl": "https://dccc.org/" },
+    { "id": "dscc", "name": "Democratic Senatorial Campaign Committee", "shortName": "DSCC", "type": "party_committee", "officialUrl": "https://www.dscc.org/" },
+    { "id": "house_democratic_leadership", "name": "House Democratic Leadership", "shortName": "House Democratic leadership", "type": "party_leadership", "officialUrl": "https://democraticleader.house.gov/about-democratic-leadership" },
+    { "id": "senate_democratic_leadership", "name": "Senate Democratic Leadership", "shortName": "Senate Democratic leadership", "type": "party_leadership", "officialUrl": "https://www.democrats.senate.gov/about-senate-dems/our-caucus" }
+  ],
+  "camps": [
+    { "id": "movement_left_network", "name": "Movement-left network", "shortName": "Movement left", "color": "#a5422c", "definition": "Reviewed DSA membership or endorsement, Justice Democrats endorsement, or both WFP and Our Revolution endorsements in the same cycle.", "ruleVersion": "taxonomy-v1", "overlapping": true },
+    { "id": "cpc_aligned", "name": "CPC-aligned progressive coalition", "shortName": "CPC aligned", "color": "#286e9e", "definition": "Official CPC member or member-elect, or CPC PAC endorsement.", "ruleVersion": "taxonomy-v1", "overlapping": true },
+    { "id": "party_network", "name": "National party network", "shortName": "Party network", "color": "#6f7181", "definition": "DCCC or DSCC program support, documented national-party intervention, contested-primary leadership endorsement, or elected Democratic leadership.", "ruleVersion": "taxonomy-v1", "overlapping": true },
+    { "id": "new_dem_aligned", "name": "New Dem growth and innovation coalition", "shortName": "New Dem aligned", "color": "#3c7b68", "definition": "Official New Democrat Coalition membership or NewDem Action Fund endorsement.", "ruleVersion": "taxonomy-v1", "overlapping": true },
+    { "id": "blue_dog_aligned", "name": "Blue Dog pragmatic and fiscal coalition", "shortName": "Blue Dog aligned", "color": "#8a6a32", "definition": "Official Blue Dog membership or Blue Dog PAC endorsement.", "ruleVersion": "taxonomy-v1", "overlapping": true }
+  ],
+  "people": [
+    { "id": "sarah_mcbride", "name": "Sarah McBride", "actualParty": "Democratic", "bioguideId": "M001238", "fecCandidateId": "H4DE00045" },
+    { "id": "adam_gray", "name": "Adam Gray", "actualParty": "Democratic", "bioguideId": "G000605", "fecCandidateId": "H2CA13115" },
+    { "id": "alexandria_ocasio_cortez", "name": "Alexandria Ocasio-Cortez", "actualParty": "Democratic", "bioguideId": "O000172", "fecCandidateId": "H8NY15148" },
+    { "id": "derek_tran", "name": "Derek Tran", "actualParty": "Democratic", "bioguideId": "T000491", "fecCandidateId": "H4CA45170" },
+    { "id": "kirsten_engel", "name": "Kirsten Engel", "actualParty": "Democratic", "bioguideId": null, "fecCandidateId": "H2AZ02311" }
+  ],
+  "relationships": [
+    { "id": "rel_mcbride_cpc_incoming", "personId": "sarah_mcbride", "organizationId": "congressional_progressive_caucus", "type": "incoming_caucus_member", "validFrom": "2024-11-11", "validTo": null, "sourceDate": "2024-11-11", "observedAt": "2024-11-11T12:00:00Z", "supersededAt": null, "evidenceGrade": "A", "reviewStatus": "reviewed", "reviewer": "research-editorial", "rationale": "Official CPC announcement names McBride as an incoming member.", "locator": "CPC new members-elect announcement", "sourceTitle": "CPC welcomes new members-elect", "sourceUrl": "https://progressives.house.gov/2024/11/congressional-progressive-caucus-welcomes-new-members-elect-to-washington-ahead-of-119th-congress" },
+    { "id": "rel_mcbride_ndc", "personId": "sarah_mcbride", "organizationId": "new_democrat_coalition", "type": "caucus_member", "validFrom": "2025-01-03", "validTo": null, "sourceDate": "2025-01-03", "observedAt": "2025-01-03T12:00:00Z", "supersededAt": null, "evidenceGrade": "A", "reviewStatus": "reviewed", "reviewer": "research-editorial", "rationale": "Official NDC freshman list names McBride.", "locator": "NDC 119th Congress freshman list", "sourceTitle": "New Dem freshmen sworn in", "sourceUrl": "https://newdemocratcoalition.house.gov/media-center/press-releases/new-dem-chair-schneider-celebrates-swearing-in-of-110-new-dem-members-including-25-freshmen" },
+    { "id": "rel_gray_dccc_2024", "personId": "adam_gray", "organizationId": "dccc", "type": "party_program_selectee", "program": "red_to_blue", "cycle": 2024, "validFrom": "2024-01-29", "validTo": null, "sourceDate": "2024-01-29", "observedAt": "2024-01-29T12:00:00Z", "supersededAt": null, "evidenceGrade": "A", "reviewStatus": "reviewed", "reviewer": "research-editorial", "rationale": "DCCC named Gray to Red to Blue for the 2024 cycle.", "locator": "First 2024 Red to Blue slate", "sourceTitle": "DCCC first 2024 Red to Blue slate", "sourceUrl": "https://dccc.org/dccc-announces-first-round-of-candidates-named-to-coveted-2024-red-to-blue-program/" },
+    { "id": "rel_gray_dccc_2026", "personId": "adam_gray", "organizationId": "dccc", "type": "party_program_selectee", "program": "frontline", "cycle": 2026, "validFrom": null, "validTo": null, "sourceDate": null, "observedAt": "2026-08-28T12:00:00Z", "supersededAt": null, "evidenceGrade": "A", "reviewStatus": "reviewed_observation", "reviewer": "research-editorial", "rationale": "DCCC lists Gray in the 2026 Frontline program.", "locator": "2026 Frontline roster", "sourceTitle": "DCCC 2026 Frontline", "sourceUrl": "https://dccc.org/2026-frontline/" },
+    { "id": "rel_gray_ndc", "personId": "adam_gray", "organizationId": "new_democrat_coalition", "type": "caucus_member", "validFrom": "2025-01-03", "validTo": null, "sourceDate": "2025-01-03", "observedAt": "2025-01-03T12:00:00Z", "supersededAt": null, "evidenceGrade": "A", "reviewStatus": "reviewed", "reviewer": "research-editorial", "rationale": "Official NDC freshman list names Gray.", "locator": "NDC 119th Congress freshman list", "sourceTitle": "New Dem freshmen sworn in", "sourceUrl": "https://newdemocratcoalition.house.gov/media-center/press-releases/new-dem-chair-schneider-celebrates-swearing-in-of-110-new-dem-members-including-25-freshmen" },
+    { "id": "rel_gray_blue_dog", "personId": "adam_gray", "organizationId": "blue_dog_coalition", "type": "caucus_member", "validFrom": "2025-02-10", "validTo": null, "sourceDate": "2025-02-10", "observedAt": "2025-02-10T12:00:00Z", "supersededAt": null, "evidenceGrade": "A", "reviewStatus": "reviewed", "reviewer": "research-editorial", "rationale": "Official Blue Dog leadership release identifies Gray as a member and whip.", "locator": "119th Congress leadership announcement", "sourceTitle": "Blue Dog leadership for the 119th Congress", "sourceUrl": "https://bluedogs-gluesenkampperez.house.gov/media-center/press-releases/blue-dog-coalition-announces-leadership-119th-congress" },
+    { "id": "rel_gray_blue_dog_whip", "personId": "adam_gray", "organizationId": "blue_dog_coalition", "type": "caucus_officer", "role": "whip", "validFrom": "2025-02-10", "validTo": "2027-01-03", "sourceDate": "2025-02-10", "observedAt": "2025-02-10T12:00:00Z", "supersededAt": null, "evidenceGrade": "A", "reviewStatus": "reviewed", "reviewer": "research-editorial", "rationale": "Official release identifies Gray as whip.", "locator": "119th Congress leadership announcement", "sourceTitle": "Blue Dog leadership for the 119th Congress", "sourceUrl": "https://bluedogs-gluesenkampperez.house.gov/media-center/press-releases/blue-dog-coalition-announces-leadership-119th-congress" },
+    { "id": "rel_aoc_dsa_member", "personId": "alexandria_ocasio_cortez", "organizationId": "dsa_national", "type": "formal_member", "validFrom": null, "validTo": null, "sourceDate": "2018-06-29", "observedAt": "2018-06-29T12:00:00Z", "supersededAt": null, "evidenceGrade": "D", "reviewStatus": "historically_confirmed_current_unknown", "reviewer": "research-editorial", "rationale": "Official DSA statement historically confirms membership, but this undated current-status relationship is not scored.", "locator": "2018 NPC statement", "sourceTitle": "DSA NPC statement on Ocasio-Cortez", "sourceUrl": "https://www.dsausa.org/blog/npc_statement_ocasio-cortez/" },
+    { "id": "rel_aoc_dsa_national_2024", "personId": "alexandria_ocasio_cortez", "organizationId": "dsa_national", "type": "conditional_endorsement", "validFrom": "2024-06-23", "validTo": "2024-07-10", "sourceDate": "2024-07-10", "observedAt": "2024-07-10T12:00:00Z", "supersededAt": null, "evidenceGrade": "A", "reviewStatus": "withdrawn", "reviewer": "research-editorial", "rationale": "DSA documents the conditional national endorsement and its withdrawal date.", "locator": "National endorsement status statement", "sourceTitle": "Status of DSA national endorsement for AOC", "sourceUrl": "https://www.dsausa.org/statements/status-of-dsa-national-endorsement-for-rep-ocasio-cortez/" },
+    { "id": "rel_aoc_nyc_dsa_2024", "personId": "alexandria_ocasio_cortez", "organizationId": "nyc_dsa", "type": "chapter_endorsement", "validFrom": null, "validTo": null, "sourceDate": "2024-07-10", "observedAt": "2024-07-10T12:00:00Z", "supersededAt": null, "evidenceGrade": "A", "reviewStatus": "confirmed_on_observation_date", "reviewer": "research-editorial", "rationale": "The national statement explicitly says the NYC chapter endorsement remained in place.", "locator": "National endorsement status statement", "sourceTitle": "Status of DSA national endorsement for AOC", "sourceUrl": "https://www.dsausa.org/statements/status-of-dsa-national-endorsement-for-rep-ocasio-cortez/" },
+    { "id": "rel_aoc_justice_democrats", "personId": "alexandria_ocasio_cortez", "organizationId": "justice_democrats", "type": "official_candidate_roster_entry", "cycle": 2026, "validFrom": null, "validTo": null, "sourceDate": null, "observedAt": "2026-08-28T12:00:00Z", "supersededAt": null, "evidenceGrade": "A", "reviewStatus": "reviewed_observation", "reviewer": "research-editorial", "rationale": "Justice Democrats lists AOC as a current candidate.", "locator": "AOC candidate page", "sourceTitle": "Justice Democrats candidate page for AOC", "sourceUrl": "https://justicedemocrats.com/candidate/alexandria-ocasio-cortez/" },
+    { "id": "rel_aoc_cpc", "personId": "alexandria_ocasio_cortez", "organizationId": "congressional_progressive_caucus", "type": "caucus_member", "validFrom": null, "validTo": null, "sourceDate": null, "observedAt": "2026-08-28T12:00:00Z", "supersededAt": null, "evidenceGrade": "A", "reviewStatus": "reviewed_observation", "reviewer": "research-editorial", "rationale": "Official current CPC roster lists AOC.", "locator": "Current CPC roster", "sourceTitle": "CPC caucus members", "sourceUrl": "https://progressives.house.gov/caucus-members" },
+    { "id": "rel_tran_dccc_2024", "personId": "derek_tran", "organizationId": "dccc", "type": "party_program_selectee", "program": "red_to_blue", "cycle": 2024, "validFrom": "2024-03-28", "validTo": null, "sourceDate": "2024-03-28", "observedAt": "2024-03-28T12:00:00Z", "supersededAt": null, "evidenceGrade": "A", "reviewStatus": "reviewed", "reviewer": "research-editorial", "rationale": "DCCC added Tran to Red to Blue for the 2024 cycle.", "locator": "Derek Tran program announcement", "sourceTitle": "Derek Tran added to Red to Blue", "sourceUrl": "https://dccc.org/derek-tran-added-to-dcccs-coveted-red-to-blue-program/" },
+    { "id": "rel_tran_dccc_2026", "personId": "derek_tran", "organizationId": "dccc", "type": "party_program_selectee", "program": "frontline", "cycle": 2026, "validFrom": null, "validTo": null, "sourceDate": null, "observedAt": "2026-08-28T12:00:00Z", "supersededAt": null, "evidenceGrade": "A", "reviewStatus": "reviewed_observation", "reviewer": "research-editorial", "rationale": "DCCC lists Tran in the 2026 Frontline program.", "locator": "2026 Frontline roster", "sourceTitle": "DCCC 2026 Frontline", "sourceUrl": "https://dccc.org/2026-frontline/" },
+    { "id": "rel_tran_ndc", "personId": "derek_tran", "organizationId": "new_democrat_coalition", "type": "caucus_member", "validFrom": "2025-01-03", "validTo": null, "sourceDate": "2025-01-03", "observedAt": "2025-01-03T12:00:00Z", "supersededAt": null, "evidenceGrade": "A", "reviewStatus": "reviewed", "reviewer": "research-editorial", "rationale": "Official NDC freshman list names Tran.", "locator": "NDC 119th Congress freshman list", "sourceTitle": "New Dem freshmen sworn in", "sourceUrl": "https://newdemocratcoalition.house.gov/media-center/press-releases/new-dem-chair-schneider-celebrates-swearing-in-of-110-new-dem-members-including-25-freshmen" },
+    { "id": "rel_engel_dccc_2022", "personId": "kirsten_engel", "organizationId": "dccc", "type": "party_program_selectee", "program": "red_to_blue", "cycle": 2022, "validFrom": "2022-09-01", "validTo": null, "sourceDate": "2022-09-01", "observedAt": "2022-09-01T12:00:00Z", "supersededAt": null, "evidenceGrade": "A", "reviewStatus": "reviewed", "reviewer": "research-editorial", "rationale": "DCCC added Engel to Red to Blue for 2022.", "locator": "Kirsten Engel 2022 program announcement", "sourceTitle": "Kirsten Engel added to 2022 Red to Blue", "sourceUrl": "https://dccc.org/kirsten-engel-az-06-added-to-competitive-dccc-red-to-blue-program/" },
+    { "id": "rel_engel_dccc_2024", "personId": "kirsten_engel", "organizationId": "dccc", "type": "party_program_selectee", "program": "red_to_blue", "cycle": 2024, "validFrom": "2024-01-29", "validTo": null, "sourceDate": "2024-01-29", "observedAt": "2024-01-29T12:00:00Z", "supersededAt": null, "evidenceGrade": "A", "reviewStatus": "reviewed", "reviewer": "research-editorial", "rationale": "DCCC named Engel to Red to Blue for 2024; this does not establish an ideological caucus.", "locator": "Kirsten Engel 2024 program announcement", "sourceTitle": "Kirsten Engel added to 2024 Red to Blue", "sourceUrl": "https://dccc.org/kirsten-engel-added-to-dcccs-coveted-red-to-blue-program/" }
+  ],
+  "model": {
+    "id": "balanced-core-v1",
+    "label": "Balanced core",
+    "coverageThreshold": 0.7,
+    "referencePeriod": "2018-present",
+    "domains": [
+      { "id": "institutional", "label": "Institutional power", "weight": 0.25, "measures": [{ "id": "published_members", "weight": 0.4 }, { "id": "democratic_leadership_offices", "weight": 0.3 }, { "id": "standing_committee_ranking_members", "weight": 0.3 }] },
+      { "id": "electoral", "label": "Electoral performance", "weight": 0.25, "measures": [{ "id": "primary_endorsement_win_rate", "weight": 1 }] },
+      { "id": "networks", "label": "Networks and endorsements", "weight": 0.2, "measures": [{ "id": "endorsed_candidates_2026", "weight": 0.7 }, { "id": "candidate_contributions", "weight": 0.3 }] },
+      { "id": "money", "label": "Money", "weight": 0.15, "measures": [{ "id": "pac_receipts_monthly", "weight": 0.4 }, { "id": "individual_contribution_share", "weight": 0.3 }, { "id": "candidate_contributions", "weight": 0.3 }] },
+      { "id": "recruitment", "label": "Recruitment pipeline", "weight": 0.15, "measures": [{ "id": "endorsed_candidates_2026", "weight": 0.65 }, { "id": "known_primary_wins_2026", "weight": 0.35 }] }
+    ]
+  },
+  "referenceDistribution": {
+    "id": "fixed-anchor-provisional-v1",
+    "status": "provisional_not_longitudinally_complete",
+    "targetPeriod": "2018-present",
+    "observedPeriod": "current reviewed aggregate plus one migrated baseline snapshot",
+    "method": "Release-versioned policy anchors prevent within-visible-camp rescaling, but they are not yet an empirical 2018-present reference distribution.",
+    "acceptanceEligible": false
+  },
+  "referenceBounds": {
+    "published_members": { "lower": 0, "upper": 130, "transform": "linear", "direction": "higher" },
+    "democratic_leadership_offices": { "lower": 0, "upper": 16, "transform": "linear", "direction": "higher" },
+    "standing_committee_ranking_members": { "lower": 0, "upper": 20, "transform": "linear", "direction": "higher" },
+    "primary_endorsement_win_rate": { "lower": 0, "upper": 1, "transform": "linear", "direction": "higher" },
+    "endorsed_candidates_2026": { "lower": 0, "upper": 40, "transform": "linear", "direction": "higher" },
+    "candidate_contributions": { "lower": 0, "upper": 750000, "transform": "log1p", "direction": "higher" },
+    "pac_receipts_monthly": { "lower": 0, "upper": 400000, "transform": "log1p", "direction": "higher" },
+    "individual_contribution_share": { "lower": 0, "upper": 100, "transform": "linear", "direction": "higher" },
+    "known_primary_wins_2026": { "lower": 0, "upper": 8, "transform": "linear", "direction": "higher" }
+  },
+  "coverage": [
+    { "cycle": 2018, "scope": "FEC House and Senate primary workbooks", "status": "complete_official_workbook", "denominatorEligible": true },
+    { "cycle": 2020, "scope": "FEC House and Senate primary workbooks", "status": "complete_official_workbook", "denominatorEligible": true },
+    { "cycle": 2022, "scope": "FEC House and Senate primary workbooks", "status": "complete_official_workbook", "denominatorEligible": true },
+    { "cycle": 2024, "scope": "FEC House and Senate primary workbook", "status": "pending_fec_publication", "denominatorEligible": false, "reason": "As of this release the FEC election-results archive has not published a comparable 2024 congressional results workbook.", "sourceUrl": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/", "observedAt": "2026-08-28" },
+    { "cycle": 2026, "scope": "State-certified federal primary results", "status": "partial_state_review", "denominatorEligible": false, "reason": "State coverage is incomplete and remains outside national rates." }
+  ]
+}

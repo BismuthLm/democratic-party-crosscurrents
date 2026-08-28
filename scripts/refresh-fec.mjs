@@ -6,6 +6,7 @@ const data = JSON.parse(await readFile(dataUrl, "utf8"));
 const apiKey = process.env.FEC_API_KEY || "DEMO_KEY";
 const committeeMap = Object.fromEntries(data.factions.map(({ id, pacId }) => [id, pacId]));
 const totals = {};
+const finiteOrNull = (value) => Number.isFinite(value) ? value : null;
 
 async function fetchTotals(endpoint, committeeId) {
   for (let attempt = 0; attempt < 3; attempt += 1) {
@@ -30,8 +31,9 @@ for (const [factionId, committeeId] of Object.entries(committeeMap)) {
 
 const coverageByFaction = Object.fromEntries(Object.entries(totals).map(([factionId, row]) => [
   factionId,
-  row.coverage_end_date.slice(0, 10)
+  typeof row.coverage_end_date === "string" ? row.coverage_end_date.slice(0, 10) : null
 ]));
+if (Object.values(coverageByFaction).some((value) => !value)) throw new Error("FEC totals omitted a coverage end date; refusing to publish an ambiguous refresh");
 const sharedFecAsOf = Object.values(coverageByFaction).sort()[0];
 
 const fields = {
@@ -45,25 +47,33 @@ const fields = {
 
 for (const metric of data.metrics) {
   if (fields[metric.id]) {
-    for (const factionId of Object.keys(committeeMap)) metric.values[factionId] = totals[factionId][fields[metric.id]] ?? 0;
+    for (const factionId of Object.keys(committeeMap)) metric.values[factionId] = finiteOrNull(totals[factionId][fields[metric.id]]);
   }
   if (metric.id === "pac_receipts_monthly") {
     for (const factionId of Object.keys(committeeMap)) {
       const row = totals[factionId];
-      const start = new Date(row.coverage_start_date);
-      const end = new Date(row.coverage_end_date);
-      const months = Math.max(1, (end.getUTCFullYear() - start.getUTCFullYear()) * 12 + end.getUTCMonth() - start.getUTCMonth() + 1);
-      metric.values[factionId] = row.receipts / months;
+      const start = row.coverage_start_date ? new Date(row.coverage_start_date) : null;
+      const end = row.coverage_end_date ? new Date(row.coverage_end_date) : null;
+      if (!Number.isFinite(row.receipts) || !start || !end || Number.isNaN(start.valueOf()) || Number.isNaN(end.valueOf())) {
+        metric.values[factionId] = null;
+      } else {
+        const months = Math.max(1, (end.getUTCFullYear() - start.getUTCFullYear()) * 12 + end.getUTCMonth() - start.getUTCMonth() + 1);
+        metric.values[factionId] = row.receipts / months;
+      }
     }
   }
   if (metric.id === "unitemized_individual_share") {
     for (const factionId of Object.keys(committeeMap)) {
       const row = totals[factionId];
-      metric.values[factionId] = row.individual_contributions ? row.individual_unitemized_contributions / row.individual_contributions * 100 : 0;
+      metric.values[factionId] = Number.isFinite(row.individual_contributions) && row.individual_contributions > 0 && Number.isFinite(row.individual_unitemized_contributions)
+        ? row.individual_unitemized_contributions / row.individual_contributions * 100
+        : null;
     }
   }
   if (metric.id === "receipts_per_member") {
-    for (const faction of data.factions) metric.values[faction.id] = totals[faction.id].receipts / faction.membersPublished;
+    for (const faction of data.factions) metric.values[faction.id] = Number.isFinite(totals[faction.id].receipts) && Number.isFinite(faction.membersPublished) && faction.membersPublished > 0
+      ? totals[faction.id].receipts / faction.membersPublished
+      : null;
   }
   if (metric.domain === "money") {
     metric.asOf = sharedFecAsOf;

@@ -1,0 +1,32 @@
+[
+  {
+    "cycle": 2018,
+    "landingPage": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/federal-elections-2018/",
+    "downloadUrl": "https://www.fec.gov/resources/cms-content/documents/federalelections2018.xlsx",
+    "localPath": "data/v3/raw/fec/federalelections2018.xlsx",
+    "sha256": "f2c42311862b4927df2ca5908c5f9c8f8da6221a8db88fd00434a22ec1e0e303",
+    "publishedAt": "2020-11-16",
+    "retrievedAt": "2026-08-28T02:35:00Z",
+    "sheets": ["2018 US Senate Results by State", "2018 US House Results by State", "2019 NC 09 New Election"]
+  },
+  {
+    "cycle": 2020,
+    "landingPage": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/federal-elections-2020/",
+    "downloadUrl": "https://www.fec.gov/resources/cms-content/documents/federalelections2020.xlsx",
+    "localPath": "data/v3/raw/fec/federalelections2020.xlsx",
+    "sha256": "5073b6d2c76c86c941508dfb1a11cc497e8529b0068c5132aceb0f385c19352e",
+    "publishedAt": "2022-12-19",
+    "retrievedAt": "2026-08-28T02:35:00Z",
+    "sheets": ["12. US Senate Results by State", "13. US House Results by State", "19. Special Elections 2019-2021"]
+  },
+  {
+    "cycle": 2022,
+    "landingPage": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/federal-elections-2022/",
+    "downloadUrl": "https://www.fec.gov/resources/cms-content/documents/federalelections2022.xlsx",
+    "localPath": "data/v3/raw/fec/federalelections2022.xlsx",
+    "sha256": "cdb258ea23803e50d752bcea19faa39b3c201eb960094bcb556c3a38c2350897",
+    "publishedAt": "2025-02-11",
+    "retrievedAt": "2026-08-28T02:35:00Z",
+    "sheets": ["7. US Senate Results by State", "8. US House Results by State", "11. Special Elections 2021-2023"]
+  }
+]
