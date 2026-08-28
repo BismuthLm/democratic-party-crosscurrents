@@ -1,0 +1,47 @@
+[
+  {
+    "id": "movement_left_network",
+    "name": "Movement-left network",
+    "shortName": "Movement left",
+    "color": "#a5422c",
+    "definition": "Reviewed DSA membership or endorsement, Justice Democrats endorsement, or both WFP and Our Revolution endorsements in the same cycle.",
+    "ruleVersion": "taxonomy-v1",
+    "overlapping": true
+  },
+  {
+    "id": "cpc_aligned",
+    "name": "CPC-aligned progressive coalition",
+    "shortName": "CPC aligned",
+    "color": "#286e9e",
+    "definition": "Official CPC member or member-elect, or CPC PAC endorsement.",
+    "ruleVersion": "taxonomy-v1",
+    "overlapping": true
+  },
+  {
+    "id": "party_network",
+    "name": "National party network",
+    "shortName": "Party network",
+    "color": "#6f7181",
+    "definition": "DCCC or DSCC program support, documented national-party intervention, contested-primary leadership endorsement, or elected Democratic leadership.",
+    "ruleVersion": "taxonomy-v1",
+    "overlapping": true
+  },
+  {
+    "id": "new_dem_aligned",
+    "name": "New Dem growth and innovation coalition",
+    "shortName": "New Dem aligned",
+    "color": "#3c7b68",
+    "definition": "Official New Democrat Coalition membership or NewDem Action Fund endorsement.",
+    "ruleVersion": "taxonomy-v1",
+    "overlapping": true
+  },
+  {
+    "id": "blue_dog_aligned",
+    "name": "Blue Dog pragmatic and fiscal coalition",
+    "shortName": "Blue Dog aligned",
+    "color": "#8a6a32",
+    "definition": "Official Blue Dog membership or Blue Dog PAC endorsement.",
+    "ruleVersion": "taxonomy-v1",
+    "overlapping": true
+  }
+]

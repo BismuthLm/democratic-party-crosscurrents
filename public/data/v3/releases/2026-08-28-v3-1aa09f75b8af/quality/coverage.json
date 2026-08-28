@@ -1,0 +1,189 @@
+{
+  "releaseId": "2026-08-28-v3-1aa09f75b8af",
+  "schemaVersion": "3.0.0",
+  "methodVersion": "balanced-core-v1",
+  "reviewedThrough": "2026-08-28",
+  "counts": {
+    "organizations": 15,
+    "camps": 5,
+    "people": 2784,
+    "observedRelationships": 17,
+    "campDerivations": 16,
+    "contests": 1397,
+    "candidacies": 3427,
+    "electionResults": 3511,
+    "sourceObservations": 3640,
+    "metricDefinitions": 23,
+    "metricObservations": 69,
+    "sources": 72,
+    "evidenceRecords": 3673,
+    "unresolvedIdentities": 50,
+    "conflictingIdentityRows": 71,
+    "legacySourcesMigrated": 57,
+    "legacyMeasuresMigrated": 22,
+    "legacyPrimaryRacesMigrated": 12,
+    "legacyFinanceCasesMigrated": 6,
+    "legacyOpinionRecordsMigrated": 6,
+    "legacyEventsMigrated": 13,
+    "legacySnapshotsMigrated": 1
+  },
+  "coverage": [
+    {
+      "cycle": 2018,
+      "scope": "FEC House and Senate primary workbooks",
+      "status": "complete_official_workbook",
+      "denominatorEligible": true,
+      "eligibleDemocraticPrimaryRows": 1280,
+      "importedRows": 1280,
+      "importRate": 1,
+      "candidateBallotRows": 1225,
+      "writeInAggregateRows": 55,
+      "sheets": [
+        {
+          "sheet": "2018 US Senate Results by State",
+          "eligibleRows": 109,
+          "importedRows": 109
+        },
+        {
+          "sheet": "2018 US House Results by State",
+          "eligibleRows": 1170,
+          "importedRows": 1170
+        },
+        {
+          "sheet": "2019 NC 09 New Election",
+          "eligibleRows": 1,
+          "importedRows": 1
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "scope": "FEC House and Senate primary workbooks",
+      "status": "complete_official_workbook",
+      "denominatorEligible": true,
+      "eligibleDemocraticPrimaryRows": 1198,
+      "importedRows": 1198,
+      "importRate": 1,
+      "candidateBallotRows": 1135,
+      "writeInAggregateRows": 63,
+      "sheets": [
+        {
+          "sheet": "12. US Senate Results by State",
+          "eligibleRows": 117,
+          "importedRows": 117
+        },
+        {
+          "sheet": "13. US House Results by State",
+          "eligibleRows": 1017,
+          "importedRows": 1017
+        },
+        {
+          "sheet": "19. Special Elections 2019-2021",
+          "eligibleRows": 64,
+          "importedRows": 64
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "scope": "FEC House and Senate primary workbooks",
+      "status": "complete_official_workbook",
+      "denominatorEligible": true,
+      "eligibleDemocraticPrimaryRows": 1162,
+      "importedRows": 1162,
+      "importRate": 1,
+      "candidateBallotRows": 1095,
+      "writeInAggregateRows": 67,
+      "sheets": [
+        {
+          "sheet": "7. US Senate Results by State",
+          "eligibleRows": 136,
+          "importedRows": 136
+        },
+        {
+          "sheet": "8. US House Results by State",
+          "eligibleRows": 963,
+          "importedRows": 963
+        },
+        {
+          "sheet": "11. Special Elections 2021-2023",
+          "eligibleRows": 63,
+          "importedRows": 63
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "scope": "FEC House and Senate primary workbook",
+      "status": "pending_fec_publication",
+      "denominatorEligible": false,
+      "reason": "As of this release the FEC election-results archive has not published a comparable 2024 congressional results workbook.",
+      "sourceUrl": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "observedAt": "2026-08-28"
+    },
+    {
+      "cycle": 2026,
+      "scope": "State-certified federal primary results",
+      "status": "partial_state_review",
+      "denominatorEligible": false,
+      "reason": "State coverage is incomplete and remains outside national rates."
+    }
+  ],
+  "reviewQueue": [
+    {
+      "id": "gap-fec-2024",
+      "severity": "coverage_gap",
+      "status": "pending_external_publication",
+      "message": "Comparable official FEC House and Senate result workbook for 2024 is not yet published."
+    },
+    {
+      "id": "gap-state-2026",
+      "severity": "partial_denominator",
+      "status": "review_required",
+      "message": "2026 state-certified coverage is partial and excluded from national rates."
+    },
+    {
+      "id": "gap-historical-rosters",
+      "severity": "temporal_gap",
+      "status": "review_required",
+      "message": "Historical caucus rosters outside the regression fixtures remain under reconstruction."
+    },
+    {
+      "id": "gap-contest-systems",
+      "severity": "outcome_semantics",
+      "status": "review_required",
+      "message": "FEC W, *, #, and W# markers are preserved as advancement or party-selection signals; nomination winners remain null until top-two, runoff, convention, withdrawal, and replacement rules are reviewed."
+    },
+    {
+      "id": "gap-contest-dates",
+      "severity": "temporal_gap",
+      "status": "review_required",
+      "message": "11 contests lack a recoverable primary or selection date in the official date sheet or row footnote and remain excluded from day-level comparisons."
+    },
+    {
+      "id": "gap-reference-distribution",
+      "severity": "method_gap",
+      "status": "review_required",
+      "message": "balanced-core-v1 uses fixed provisional anchors rather than a complete empirical 2018-present reference distribution; Model Lab results remain explicitly provisional."
+    },
+    {
+      "id": "gap-unresolved-identities",
+      "severity": "identity_gap",
+      "status": "review_required",
+      "message": "50 official result rows lack a valid FEC candidate ID and remain deliberately row-specific rather than falsely merged."
+    },
+    {
+      "id": "gap-conflicting-identifiers",
+      "severity": "identity_conflict",
+      "status": "review_required",
+      "message": "71 official result rows reuse an FEC candidate ID across incompatible names; rows remain separate and joins require review."
+    }
+  ],
+  "exclusions": [
+    "AP Elections licensed feed",
+    "Cook PVI",
+    "Roper iPoll microdata",
+    "FEC individual contributor addresses"
+  ],
+  "missingDataPolicy": "Null remains distinct from a reported zero. Partial universes never produce national rates."
+}

@@ -1,0 +1,1572 @@
+{
+  "model": {
+    "id": "balanced-core-v1",
+    "label": "Balanced core",
+    "coverageThreshold": 0.7,
+    "referencePeriod": "2018-present",
+    "domains": [
+      {
+        "id": "institutional",
+        "label": "Institutional power",
+        "weight": 0.25,
+        "measures": [
+          {
+            "id": "published_members",
+            "weight": 0.4
+          },
+          {
+            "id": "democratic_leadership_offices",
+            "weight": 0.3
+          },
+          {
+            "id": "standing_committee_ranking_members",
+            "weight": 0.3
+          }
+        ]
+      },
+      {
+        "id": "electoral",
+        "label": "Electoral performance",
+        "weight": 0.25,
+        "measures": [
+          {
+            "id": "primary_endorsement_win_rate",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "id": "networks",
+        "label": "Networks and endorsements",
+        "weight": 0.2,
+        "measures": [
+          {
+            "id": "endorsed_candidates_2026",
+            "weight": 0.7
+          },
+          {
+            "id": "candidate_contributions",
+            "weight": 0.3
+          }
+        ]
+      },
+      {
+        "id": "money",
+        "label": "Money",
+        "weight": 0.15,
+        "measures": [
+          {
+            "id": "pac_receipts_monthly",
+            "weight": 0.4
+          },
+          {
+            "id": "individual_contribution_share",
+            "weight": 0.3
+          },
+          {
+            "id": "candidate_contributions",
+            "weight": 0.3
+          }
+        ]
+      },
+      {
+        "id": "recruitment",
+        "label": "Recruitment pipeline",
+        "weight": 0.15,
+        "measures": [
+          {
+            "id": "endorsed_candidates_2026",
+            "weight": 0.65
+          },
+          {
+            "id": "known_primary_wins_2026",
+            "weight": 0.35
+          }
+        ]
+      }
+    ]
+  },
+  "referenceDistribution": {
+    "id": "fixed-anchor-provisional-v1",
+    "status": "provisional_not_longitudinally_complete",
+    "targetPeriod": "2018-present",
+    "observedPeriod": "current reviewed aggregate plus one migrated baseline snapshot",
+    "method": "Release-versioned policy anchors prevent within-visible-camp rescaling, but they are not yet an empirical 2018-present reference distribution.",
+    "acceptanceEligible": false
+  },
+  "referenceBounds": {
+    "published_members": {
+      "lower": 0,
+      "upper": 130,
+      "transform": "linear",
+      "direction": "higher"
+    },
+    "democratic_leadership_offices": {
+      "lower": 0,
+      "upper": 16,
+      "transform": "linear",
+      "direction": "higher"
+    },
+    "standing_committee_ranking_members": {
+      "lower": 0,
+      "upper": 20,
+      "transform": "linear",
+      "direction": "higher"
+    },
+    "primary_endorsement_win_rate": {
+      "lower": 0,
+      "upper": 1,
+      "transform": "linear",
+      "direction": "higher"
+    },
+    "endorsed_candidates_2026": {
+      "lower": 0,
+      "upper": 40,
+      "transform": "linear",
+      "direction": "higher"
+    },
+    "candidate_contributions": {
+      "lower": 0,
+      "upper": 750000,
+      "transform": "log1p",
+      "direction": "higher"
+    },
+    "pac_receipts_monthly": {
+      "lower": 0,
+      "upper": 400000,
+      "transform": "log1p",
+      "direction": "higher"
+    },
+    "individual_contribution_share": {
+      "lower": 0,
+      "upper": 100,
+      "transform": "linear",
+      "direction": "higher"
+    },
+    "known_primary_wins_2026": {
+      "lower": 0,
+      "upper": 8,
+      "transform": "linear",
+      "direction": "higher"
+    }
+  },
+  "scores": [
+    {
+      "campId": "movement_left_network",
+      "score": null,
+      "interval80": [
+        null,
+        null
+      ],
+      "interval95": [
+        null,
+        null
+      ],
+      "sufficient": false,
+      "reason": "insufficient_coverage",
+      "domainScores": [
+        {
+          "id": "institutional",
+          "label": "Institutional power",
+          "weight": 0.25,
+          "coverage": 0,
+          "sufficient": false,
+          "score": null,
+          "interval80": [
+            null,
+            null
+          ],
+          "interval95": [
+            null,
+            null
+          ],
+          "inputs": []
+        },
+        {
+          "id": "electoral",
+          "label": "Electoral performance",
+          "weight": 0.25,
+          "coverage": 0,
+          "sufficient": false,
+          "score": null,
+          "interval80": [
+            null,
+            null
+          ],
+          "interval95": [
+            null,
+            null
+          ],
+          "inputs": []
+        },
+        {
+          "id": "networks",
+          "label": "Networks and endorsements",
+          "weight": 0.2,
+          "coverage": 0,
+          "sufficient": false,
+          "score": null,
+          "interval80": [
+            null,
+            null
+          ],
+          "interval95": [
+            null,
+            null
+          ],
+          "inputs": []
+        },
+        {
+          "id": "money",
+          "label": "Money",
+          "weight": 0.15,
+          "coverage": 0,
+          "sufficient": false,
+          "score": null,
+          "interval80": [
+            null,
+            null
+          ],
+          "interval95": [
+            null,
+            null
+          ],
+          "inputs": []
+        },
+        {
+          "id": "recruitment",
+          "label": "Recruitment pipeline",
+          "weight": 0.15,
+          "coverage": 0,
+          "sufficient": false,
+          "score": null,
+          "interval80": [
+            null,
+            null
+          ],
+          "interval95": [
+            null,
+            null
+          ],
+          "inputs": []
+        }
+      ],
+      "leaveOneMetricOut": [
+        {
+          "metricId": "published_members",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "democratic_leadership_offices",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "standing_committee_ranking_members",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "primary_endorsement_win_rate",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "endorsed_candidates_2026",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "candidate_contributions",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "pac_receipts_monthly",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "individual_contribution_share",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "known_primary_wins_2026",
+          "score": null,
+          "sufficient": false
+        }
+      ],
+      "weightSensitivity": [
+        {
+          "domainId": "institutional",
+          "multiplier": 0.8,
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "domainId": "institutional",
+          "multiplier": 1.2,
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "domainId": "electoral",
+          "multiplier": 0.8,
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "domainId": "electoral",
+          "multiplier": 1.2,
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "domainId": "networks",
+          "multiplier": 0.8,
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "domainId": "networks",
+          "multiplier": 1.2,
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "domainId": "money",
+          "multiplier": 0.8,
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "domainId": "money",
+          "multiplier": 1.2,
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "domainId": "recruitment",
+          "multiplier": 0.8,
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "domainId": "recruitment",
+          "multiplier": 1.2,
+          "score": null,
+          "sufficient": false
+        }
+      ],
+      "attributionSensitivity": [
+        {
+          "mode": "full",
+          "score": null,
+          "note": "Current balanced-core inputs are aggregate reviewed formal-camp observations; attribution changes do not alter them."
+        },
+        {
+          "mode": "confidence_weighted",
+          "score": null,
+          "note": "Current balanced-core inputs are aggregate reviewed formal-camp observations; attribution changes do not alter them."
+        },
+        {
+          "mode": "split_credit",
+          "score": null,
+          "note": "Current balanced-core inputs are aggregate reviewed formal-camp observations; attribution changes do not alter them."
+        }
+      ]
+    },
+    {
+      "campId": "cpc_aligned",
+      "score": 56.08823356117482,
+      "interval80": [
+        54.17189874097333,
+        58.320517831945025
+      ],
+      "interval95": [
+        53.59746772875177,
+        59.89103748075041
+      ],
+      "sufficient": true,
+      "reason": null,
+      "domainScores": [
+        {
+          "id": "institutional",
+          "label": "Institutional power",
+          "weight": 0.25,
+          "coverage": 1,
+          "sufficient": true,
+          "score": 64.07692307692308,
+          "interval80": [
+            64.07692307692308,
+            64.07692307692308
+          ],
+          "interval95": [
+            64.07692307692308,
+            64.07692307692308
+          ],
+          "inputs": [
+            {
+              "metricId": "published_members",
+              "raw": 101,
+              "numerator": null,
+              "denominator": null,
+              "score": 77.6923076923077,
+              "weight": 0.4
+            },
+            {
+              "metricId": "democratic_leadership_offices",
+              "raw": 8,
+              "numerator": null,
+              "denominator": null,
+              "score": 50,
+              "weight": 0.3
+            },
+            {
+              "metricId": "standing_committee_ranking_members",
+              "raw": 12,
+              "numerator": null,
+              "denominator": null,
+              "score": 60,
+              "weight": 0.3
+            }
+          ]
+        },
+        {
+          "id": "electoral",
+          "label": "Electoral performance",
+          "weight": 0.25,
+          "coverage": 1,
+          "sufficient": true,
+          "score": 13.461538461538462,
+          "interval80": [
+            5.796199180732526,
+            22.390675544619338
+          ],
+          "interval95": [
+            3.4984751318462877,
+            28.672754139840883
+          ],
+          "inputs": [
+            {
+              "metricId": "primary_endorsement_win_rate",
+              "raw": 0.1346153846153846,
+              "numerator": 3,
+              "denominator": 25,
+              "score": 13.461538461538462,
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "id": "networks",
+          "label": "Networks and endorsements",
+          "weight": 0.2,
+          "coverage": 1,
+          "sufficient": true,
+          "score": 73.16076411332499,
+          "interval80": [
+            73.16076411332499,
+            73.16076411332499
+          ],
+          "interval95": [
+            73.16076411332499,
+            73.16076411332499
+          ],
+          "inputs": [
+            {
+              "metricId": "endorsed_candidates_2026",
+              "raw": 25,
+              "numerator": null,
+              "denominator": null,
+              "score": 62.5,
+              "weight": 0.7
+            },
+            {
+              "metricId": "candidate_contributions",
+              "raw": 575000,
+              "numerator": null,
+              "denominator": null,
+              "score": 98.03588037774995,
+              "weight": 0.3
+            }
+          ]
+        },
+        {
+          "id": "money",
+          "label": "Money",
+          "weight": 0.15,
+          "coverage": 1,
+          "sufficient": true,
+          "score": 93.3931023592962,
+          "interval80": [
+            93.3931023592962,
+            93.3931023592962
+          ],
+          "interval95": [
+            93.3931023592962,
+            93.3931023592962
+          ],
+          "inputs": [
+            {
+              "metricId": "pac_receipts_monthly",
+              "raw": 304820.09,
+              "numerator": null,
+              "denominator": null,
+              "score": 97.893345614928,
+              "weight": 0.4
+            },
+            {
+              "metricId": "individual_contribution_share",
+              "raw": 82.75,
+              "numerator": null,
+              "denominator": null,
+              "score": 82.75,
+              "weight": 0.3
+            },
+            {
+              "metricId": "candidate_contributions",
+              "raw": 575000,
+              "numerator": null,
+              "denominator": null,
+              "score": 98.03588037774995,
+              "weight": 0.3
+            }
+          ]
+        },
+        {
+          "id": "recruitment",
+          "label": "Recruitment pipeline",
+          "weight": 0.15,
+          "coverage": 1,
+          "sufficient": true,
+          "score": 53.75,
+          "interval80": [
+            53.75,
+            53.75
+          ],
+          "interval95": [
+            53.75,
+            53.75
+          ],
+          "inputs": [
+            {
+              "metricId": "endorsed_candidates_2026",
+              "raw": 25,
+              "numerator": null,
+              "denominator": null,
+              "score": 62.5,
+              "weight": 0.65
+            },
+            {
+              "metricId": "known_primary_wins_2026",
+              "raw": 3,
+              "numerator": null,
+              "denominator": null,
+              "score": 37.5,
+              "weight": 0.35
+            }
+          ]
+        }
+      ],
+      "leaveOneMetricOut": [
+        {
+          "metricId": "published_members",
+          "score": 53.819002791944044,
+          "sufficient": true
+        },
+        {
+          "metricId": "democratic_leadership_offices",
+          "score": 57.59647531941657,
+          "sufficient": true
+        },
+        {
+          "metricId": "standing_committee_ranking_members",
+          "score": 56.525046747988,
+          "sufficient": true
+        },
+        {
+          "metricId": "primary_endorsement_win_rate",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "endorsed_candidates_2026",
+          "score": 58.6257568140598,
+          "sufficient": true
+        },
+        {
+          "metricId": "candidate_contributions",
+          "score": 53.657616437323504,
+          "sufficient": true
+        },
+        {
+          "metricId": "pac_receipts_monthly",
+          "score": 55.63820923561163,
+          "sufficient": true
+        },
+        {
+          "metricId": "individual_contribution_share",
+          "score": 56.772432998558145,
+          "sufficient": true
+        },
+        {
+          "metricId": "known_primary_wins_2026",
+          "score": 57.40073356117482,
+          "sufficient": true
+        }
+      ],
+      "weightSensitivity": [
+        {
+          "domainId": "institutional",
+          "multiplier": 0.8,
+          "score": 55.66777621824069,
+          "sufficient": true
+        },
+        {
+          "domainId": "institutional",
+          "multiplier": 1.2,
+          "score": 56.46864734763903,
+          "sufficient": true
+        },
+        {
+          "domainId": "electoral",
+          "multiplier": 0.8,
+          "score": 58.331743829576716,
+          "sufficient": true
+        },
+        {
+          "domainId": "electoral",
+          "multiplier": 1.2,
+          "score": 54.05839093738262,
+          "sufficient": true
+        },
+        {
+          "domainId": "networks",
+          "multiplier": 0.8,
+          "score": 55.37687812150189,
+          "sufficient": true
+        },
+        {
+          "domainId": "networks",
+          "multiplier": 1.2,
+          "score": 56.74486935164214,
+          "sufficient": true
+        },
+        {
+          "domainId": "money",
+          "multiplier": 0.8,
+          "score": 54.93447473236694,
+          "sufficient": true
+        },
+        {
+          "domainId": "money",
+          "multiplier": 1.2,
+          "score": 57.17478313781913,
+          "sufficient": true
+        },
+        {
+          "domainId": "recruitment",
+          "multiplier": 0.8,
+          "score": 56.16055006306682,
+          "sufficient": true
+        },
+        {
+          "domainId": "recruitment",
+          "multiplier": 1.2,
+          "score": 56.020129671043506,
+          "sufficient": true
+        }
+      ],
+      "attributionSensitivity": [
+        {
+          "mode": "full",
+          "score": 56.08823356117482,
+          "note": "Current balanced-core inputs are aggregate reviewed formal-camp observations; attribution changes do not alter them."
+        },
+        {
+          "mode": "confidence_weighted",
+          "score": 56.08823356117482,
+          "note": "Current balanced-core inputs are aggregate reviewed formal-camp observations; attribution changes do not alter them."
+        },
+        {
+          "mode": "split_credit",
+          "score": 56.08823356117482,
+          "note": "Current balanced-core inputs are aggregate reviewed formal-camp observations; attribution changes do not alter them."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "campId": "party_network",
+      "score": null,
+      "interval80": [
+        null,
+        null
+      ],
+      "interval95": [
+        null,
+        null
+      ],
+      "sufficient": false,
+      "reason": "insufficient_coverage",
+      "domainScores": [
+        {
+          "id": "institutional",
+          "label": "Institutional power",
+          "weight": 0.25,
+          "coverage": 0,
+          "sufficient": false,
+          "score": null,
+          "interval80": [
+            null,
+            null
+          ],
+          "interval95": [
+            null,
+            null
+          ],
+          "inputs": []
+        },
+        {
+          "id": "electoral",
+          "label": "Electoral performance",
+          "weight": 0.25,
+          "coverage": 0,
+          "sufficient": false,
+          "score": null,
+          "interval80": [
+            null,
+            null
+          ],
+          "interval95": [
+            null,
+            null
+          ],
+          "inputs": []
+        },
+        {
+          "id": "networks",
+          "label": "Networks and endorsements",
+          "weight": 0.2,
+          "coverage": 0,
+          "sufficient": false,
+          "score": null,
+          "interval80": [
+            null,
+            null
+          ],
+          "interval95": [
+            null,
+            null
+          ],
+          "inputs": []
+        },
+        {
+          "id": "money",
+          "label": "Money",
+          "weight": 0.15,
+          "coverage": 0,
+          "sufficient": false,
+          "score": null,
+          "interval80": [
+            null,
+            null
+          ],
+          "interval95": [
+            null,
+            null
+          ],
+          "inputs": []
+        },
+        {
+          "id": "recruitment",
+          "label": "Recruitment pipeline",
+          "weight": 0.15,
+          "coverage": 0,
+          "sufficient": false,
+          "score": null,
+          "interval80": [
+            null,
+            null
+          ],
+          "interval95": [
+            null,
+            null
+          ],
+          "inputs": []
+        }
+      ],
+      "leaveOneMetricOut": [
+        {
+          "metricId": "published_members",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "democratic_leadership_offices",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "standing_committee_ranking_members",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "primary_endorsement_win_rate",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "endorsed_candidates_2026",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "candidate_contributions",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "pac_receipts_monthly",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "individual_contribution_share",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "known_primary_wins_2026",
+          "score": null,
+          "sufficient": false
+        }
+      ],
+      "weightSensitivity": [
+        {
+          "domainId": "institutional",
+          "multiplier": 0.8,
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "domainId": "institutional",
+          "multiplier": 1.2,
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "domainId": "electoral",
+          "multiplier": 0.8,
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "domainId": "electoral",
+          "multiplier": 1.2,
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "domainId": "networks",
+          "multiplier": 0.8,
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "domainId": "networks",
+          "multiplier": 1.2,
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "domainId": "money",
+          "multiplier": 0.8,
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "domainId": "money",
+          "multiplier": 1.2,
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "domainId": "recruitment",
+          "multiplier": 0.8,
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "domainId": "recruitment",
+          "multiplier": 1.2,
+          "score": null,
+          "sufficient": false
+        }
+      ],
+      "attributionSensitivity": [
+        {
+          "mode": "full",
+          "score": null,
+          "note": "Current balanced-core inputs are aggregate reviewed formal-camp observations; attribution changes do not alter them."
+        },
+        {
+          "mode": "confidence_weighted",
+          "score": null,
+          "note": "Current balanced-core inputs are aggregate reviewed formal-camp observations; attribution changes do not alter them."
+        },
+        {
+          "mode": "split_credit",
+          "score": null,
+          "note": "Current balanced-core inputs are aggregate reviewed formal-camp observations; attribution changes do not alter them."
+        }
+      ]
+    },
+    {
+      "campId": "new_dem_aligned",
+      "score": 55.722451935949806,
+      "interval80": [
+        54.2813338263197,
+        57.416853745512874
+      ],
+      "interval95": [
+        53.85951767783962,
+        58.65028061839259
+      ],
+      "sufficient": true,
+      "reason": null,
+      "domainScores": [
+        {
+          "id": "institutional",
+          "label": "Institutional power",
+          "weight": 0.25,
+          "coverage": 1,
+          "sufficient": true,
+          "score": 55.32692307692308,
+          "interval80": [
+            55.32692307692308,
+            55.32692307692308
+          ],
+          "interval95": [
+            55.32692307692308,
+            55.32692307692308
+          ],
+          "inputs": [
+            {
+              "metricId": "published_members",
+              "raw": 114,
+              "numerator": null,
+              "denominator": null,
+              "score": 87.6923076923077,
+              "weight": 0.4
+            },
+            {
+              "metricId": "democratic_leadership_offices",
+              "raw": 6,
+              "numerator": null,
+              "denominator": null,
+              "score": 37.5,
+              "weight": 0.3
+            },
+            {
+              "metricId": "standing_committee_ranking_members",
+              "raw": 6,
+              "numerator": null,
+              "denominator": null,
+              "score": 30,
+              "weight": 0.3
+            }
+          ]
+        },
+        {
+          "id": "electoral",
+          "label": "Electoral performance",
+          "weight": 0.25,
+          "coverage": 1,
+          "sufficient": true,
+          "score": 10,
+          "interval80": [
+            4.235527561479592,
+            16.777607238252262
+          ],
+          "interval95": [
+            2.5482629675592507,
+            21.711314729771143
+          ],
+          "inputs": [
+            {
+              "metricId": "primary_endorsement_win_rate",
+              "raw": 0.1,
+              "numerator": 3,
+              "denominator": 34,
+              "score": 10,
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "id": "networks",
+          "label": "Networks and endorsements",
+          "weight": 0.2,
+          "coverage": 1,
+          "sufficient": true,
+          "score": 89.16552800848248,
+          "interval80": [
+            89.16552800848248,
+            89.16552800848248
+          ],
+          "interval95": [
+            89.16552800848248,
+            89.16552800848248
+          ],
+          "inputs": [
+            {
+              "metricId": "endorsed_candidates_2026",
+              "raw": 34,
+              "numerator": null,
+              "denominator": null,
+              "score": 85,
+              "weight": 0.7
+            },
+            {
+              "metricId": "candidate_contributions",
+              "raw": 645000,
+              "numerator": null,
+              "denominator": null,
+              "score": 98.88509336160831,
+              "weight": 0.3
+            }
+          ]
+        },
+        {
+          "id": "money",
+          "label": "Money",
+          "weight": 0.15,
+          "coverage": 1,
+          "sufficient": true,
+          "score": 75.34243710015024,
+          "interval80": [
+            75.34243710015024,
+            75.34243710015024
+          ],
+          "interval95": [
+            75.34243710015024,
+            75.34243710015024
+          ],
+          "inputs": [
+            {
+              "metricId": "pac_receipts_monthly",
+              "raw": 218147.12,
+              "numerator": null,
+              "denominator": null,
+              "score": 95.29977272916933,
+              "weight": 0.4
+            },
+            {
+              "metricId": "individual_contribution_share",
+              "raw": 25.19,
+              "numerator": null,
+              "denominator": null,
+              "score": 25.19,
+              "weight": 0.3
+            },
+            {
+              "metricId": "candidate_contributions",
+              "raw": 645000,
+              "numerator": null,
+              "denominator": null,
+              "score": 98.88509336160831,
+              "weight": 0.3
+            }
+          ]
+        },
+        {
+          "id": "recruitment",
+          "label": "Recruitment pipeline",
+          "weight": 0.15,
+          "coverage": 1,
+          "sufficient": true,
+          "score": 68.375,
+          "interval80": [
+            68.375,
+            68.375
+          ],
+          "interval95": [
+            68.375,
+            68.375
+          ],
+          "inputs": [
+            {
+              "metricId": "endorsed_candidates_2026",
+              "raw": 34,
+              "numerator": null,
+              "denominator": null,
+              "score": 85,
+              "weight": 0.65
+            },
+            {
+              "metricId": "known_primary_wins_2026",
+              "raw": 3,
+              "numerator": null,
+              "denominator": null,
+              "score": 37.5,
+              "weight": 0.35
+            }
+          ]
+        }
+      ],
+      "leaveOneMetricOut": [
+        {
+          "metricId": "published_members",
+          "score": 50.32822116671903,
+          "sufficient": true
+        },
+        {
+          "metricId": "democratic_leadership_offices",
+          "score": 57.63247940847728,
+          "sufficient": true
+        },
+        {
+          "metricId": "standing_committee_ranking_members",
+          "score": 58.436050837048704,
+          "sufficient": true
+        },
+        {
+          "metricId": "primary_endorsement_win_rate",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "endorsed_candidates_2026",
+          "score": 53.03511500657497,
+          "sufficient": true
+        },
+        {
+          "metricId": "candidate_contributions",
+          "score": 53.375889860302436,
+          "sufficient": true
+        },
+        {
+          "metricId": "pac_receipts_monthly",
+          "score": 53.726718373047895,
+          "sufficient": true
+        },
+        {
+          "metricId": "individual_contribution_share",
+          "score": 58.94653717810232,
+          "sufficient": true
+        },
+        {
+          "metricId": "known_primary_wins_2026",
+          "score": 58.216201935949805,
+          "sufficient": true
+        }
+      ],
+      "weightSensitivity": [
+        {
+          "domainId": "institutional",
+          "multiplier": 0.8,
+          "score": 55.74326924431963,
+          "sufficient": true
+        },
+        {
+          "domainId": "institutional",
+          "multiplier": 1.2,
+          "score": 55.70361722837711,
+          "sufficient": true
+        },
+        {
+          "domainId": "electoral",
+          "multiplier": 0.8,
+          "score": 58.128896774683994,
+          "sufficient": true
+        },
+        {
+          "domainId": "electoral",
+          "multiplier": 1.2,
+          "score": 53.54519231995221,
+          "sufficient": true
+        },
+        {
+          "domainId": "networks",
+          "multiplier": 0.8,
+          "score": 54.328990432927604,
+          "sufficient": true
+        },
+        {
+          "domainId": "networks",
+          "multiplier": 1.2,
+          "score": 57.00872409258568,
+          "sufficient": true
+        },
+        {
+          "domainId": "money",
+          "multiplier": 0.8,
+          "score": 55.11564827107762,
+          "sufficient": true
+        },
+        {
+          "domainId": "money",
+          "multiplier": 1.2,
+          "score": 56.29390781451875,
+          "sufficient": true
+        },
+        {
+          "domainId": "recruitment",
+          "multiplier": 0.8,
+          "score": 55.3311360164431,
+          "sufficient": true
+        },
+        {
+          "domainId": "recruitment",
+          "multiplier": 1.2,
+          "score": 56.09097275334932,
+          "sufficient": true
+        }
+      ],
+      "attributionSensitivity": [
+        {
+          "mode": "full",
+          "score": 55.722451935949806,
+          "note": "Current balanced-core inputs are aggregate reviewed formal-camp observations; attribution changes do not alter them."
+        },
+        {
+          "mode": "confidence_weighted",
+          "score": 55.722451935949806,
+          "note": "Current balanced-core inputs are aggregate reviewed formal-camp observations; attribution changes do not alter them."
+        },
+        {
+          "mode": "split_credit",
+          "score": 55.722451935949806,
+          "note": "Current balanced-core inputs are aggregate reviewed formal-camp observations; attribution changes do not alter them."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "campId": "blue_dog_aligned",
+      "score": 27.63426567284867,
+      "interval80": [
+        25.36391478173435,
+        30.593315740729025
+      ],
+      "interval95": [
+        24.978258444087,
+        32.96204344824804
+      ],
+      "sufficient": true,
+      "reason": null,
+      "domainScores": [
+        {
+          "id": "institutional",
+          "label": "Institutional power",
+          "weight": 0.25,
+          "coverage": 1,
+          "sufficient": true,
+          "score": 3.076923076923077,
+          "interval80": [
+            3.076923076923077,
+            3.076923076923077
+          ],
+          "interval95": [
+            3.076923076923077,
+            3.076923076923077
+          ],
+          "inputs": [
+            {
+              "metricId": "published_members",
+              "raw": 10,
+              "numerator": null,
+              "denominator": null,
+              "score": 7.6923076923076925,
+              "weight": 0.4
+            },
+            {
+              "metricId": "democratic_leadership_offices",
+              "raw": 0,
+              "numerator": null,
+              "denominator": null,
+              "score": 0,
+              "weight": 0.3
+            },
+            {
+              "metricId": "standing_committee_ranking_members",
+              "raw": 0,
+              "numerator": null,
+              "denominator": null,
+              "score": 0,
+              "weight": 0.3
+            }
+          ]
+        },
+        {
+          "id": "electoral",
+          "label": "Electoral performance",
+          "weight": 0.25,
+          "coverage": 1,
+          "sufficient": true,
+          "score": 11.538461538461538,
+          "interval80": [
+            2.4570579740042646,
+            23.37466180998295
+          ],
+          "interval95": [
+            0.9144326234148511,
+            32.849572640059
+          ],
+          "inputs": [
+            {
+              "metricId": "primary_endorsement_win_rate",
+              "raw": 0.11538461538461539,
+              "numerator": 1,
+              "denominator": 12,
+              "score": 11.538461538461538,
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "id": "networks",
+          "label": "Networks and endorsements",
+          "weight": 0.2,
+          "coverage": 1,
+          "sufficient": true,
+          "score": 48.95687570891396,
+          "interval80": [
+            48.95687570891396,
+            48.95687570891396
+          ],
+          "interval95": [
+            48.95687570891396,
+            48.95687570891396
+          ],
+          "inputs": [
+            {
+              "metricId": "endorsed_candidates_2026",
+              "raw": 12,
+              "numerator": null,
+              "denominator": null,
+              "score": 30,
+              "weight": 0.7
+            },
+            {
+              "metricId": "candidate_contributions",
+              "raw": 298500,
+              "numerator": null,
+              "denominator": null,
+              "score": 93.18958569637988,
+              "weight": 0.3
+            }
+          ]
+        },
+        {
+          "id": "money",
+          "label": "Money",
+          "weight": 0.15,
+          "coverage": 1,
+          "sufficient": true,
+          "score": 70.71862918146482,
+          "interval80": [
+            70.71862918146482,
+            70.71862918146482
+          ],
+          "interval95": [
+            70.71862918146482,
+            70.71862918146482
+          ],
+          "inputs": [
+            {
+              "metricId": "pac_receipts_monthly",
+              "raw": 99471.77,
+              "numerator": null,
+              "denominator": null,
+              "score": 89.21188368137716,
+              "weight": 0.4
+            },
+            {
+              "metricId": "individual_contribution_share",
+              "raw": 23.59,
+              "numerator": null,
+              "denominator": null,
+              "score": 23.59,
+              "weight": 0.3
+            },
+            {
+              "metricId": "candidate_contributions",
+              "raw": 298500,
+              "numerator": null,
+              "denominator": null,
+              "score": 93.18958569637988,
+              "weight": 0.3
+            }
+          ]
+        },
+        {
+          "id": "recruitment",
+          "label": "Recruitment pipeline",
+          "weight": 0.15,
+          "coverage": 1,
+          "sufficient": true,
+          "score": 23.875,
+          "interval80": [
+            23.875,
+            23.875
+          ],
+          "interval95": [
+            23.875,
+            23.875
+          ],
+          "inputs": [
+            {
+              "metricId": "endorsed_candidates_2026",
+              "raw": 12,
+              "numerator": null,
+              "denominator": null,
+              "score": 30,
+              "weight": 0.65
+            },
+            {
+              "metricId": "known_primary_wins_2026",
+              "raw": 1,
+              "numerator": null,
+              "denominator": null,
+              "score": 12.5,
+              "weight": 0.35
+            }
+          ]
+        }
+      ],
+      "leaveOneMetricOut": [
+        {
+          "metricId": "published_members",
+          "score": 26.8650349036179,
+          "sufficient": true
+        },
+        {
+          "metricId": "democratic_leadership_offices",
+          "score": 27.963936002519002,
+          "sufficient": true
+        },
+        {
+          "metricId": "standing_committee_ranking_members",
+          "score": 27.963936002519002,
+          "sufficient": true
+        },
+        {
+          "metricId": "primary_endorsement_win_rate",
+          "score": null,
+          "sufficient": false
+        },
+        {
+          "metricId": "endorsed_candidates_2026",
+          "score": 34.77455767034185,
+          "sufficient": true
+        },
+        {
+          "metricId": "candidate_contributions",
+          "score": 22.39832904082134,
+          "sufficient": true
+        },
+        {
+          "metricId": "pac_receipts_monthly",
+          "score": 25.78494022285744,
+          "sufficient": true
+        },
+        {
+          "metricId": "individual_contribution_share",
+          "score": 30.663963263085694,
+          "sufficient": true
+        },
+        {
+          "metricId": "known_primary_wins_2026",
+          "score": 28.55301567284867,
+          "sufficient": true
+        }
+      ],
+      "weightSensitivity": [
+        {
+          "domainId": "institutional",
+          "multiplier": 0.8,
+          "score": 28.9267573884237,
+          "sufficient": true
+        },
+        {
+          "domainId": "institutional",
+          "multiplier": 1.2,
+          "score": 26.464868406376027,
+          "sufficient": true
+        },
+        {
+          "domainId": "electoral",
+          "multiplier": 0.8,
+          "score": 28.481413258869043,
+          "sufficient": true
+        },
+        {
+          "domainId": "electoral",
+          "multiplier": 1.2,
+          "score": 26.86779880930643,
+          "sufficient": true
+        },
+        {
+          "domainId": "networks",
+          "multiplier": 0.8,
+          "score": 26.745823588012613,
+          "sufficient": true
+        },
+        {
+          "domainId": "networks",
+          "multiplier": 1.2,
+          "score": 28.454366058851186,
+          "sufficient": true
+        },
+        {
+          "domainId": "money",
+          "multiplier": 0.8,
+          "score": 26.301759584953327,
+          "sufficient": true
+        },
+        {
+          "domainId": "money",
+          "multiplier": 1.2,
+          "score": 28.88915004688603,
+          "sufficient": true
+        },
+        {
+          "domainId": "recruitment",
+          "multiplier": 0.8,
+          "score": 27.750531621493472,
+          "sufficient": true
+        },
+        {
+          "domainId": "recruitment",
+          "multiplier": 1.2,
+          "score": 27.524772497911325,
+          "sufficient": true
+        }
+      ],
+      "attributionSensitivity": [
+        {
+          "mode": "full",
+          "score": 27.63426567284867,
+          "note": "Current balanced-core inputs are aggregate reviewed formal-camp observations; attribution changes do not alter them."
+        },
+        {
+          "mode": "confidence_weighted",
+          "score": 27.63426567284867,
+          "note": "Current balanced-core inputs are aggregate reviewed formal-camp observations; attribution changes do not alter them."
+        },
+        {
+          "mode": "split_credit",
+          "score": 27.63426567284867,
+          "note": "Current balanced-core inputs are aggregate reviewed formal-camp observations; attribution changes do not alter them."
+        }
+      ],
+      "rank": 3
+    }
+  ]
+}

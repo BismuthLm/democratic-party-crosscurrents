@@ -1,0 +1,107 @@
+[
+  {
+    "id": "congressional_progressive_caucus",
+    "name": "Congressional Progressive Caucus",
+    "shortName": "CPC",
+    "type": "formal_caucus",
+    "officialUrl": "https://progressives.house.gov/about-the-cpc"
+  },
+  {
+    "id": "cpc_pac",
+    "name": "Congressional Progressive Caucus PAC",
+    "shortName": "CPC PAC",
+    "type": "pac",
+    "officialUrl": "https://weareprogressives.org/"
+  },
+  {
+    "id": "new_democrat_coalition",
+    "name": "New Democrat Coalition",
+    "shortName": "NDC",
+    "type": "formal_caucus",
+    "officialUrl": "https://newdemocratcoalition.house.gov/about-us"
+  },
+  {
+    "id": "newdem_action_fund",
+    "name": "NewDem Action Fund",
+    "shortName": "NewDem Action",
+    "type": "pac",
+    "officialUrl": "https://newdemactionfund.com/"
+  },
+  {
+    "id": "blue_dog_coalition",
+    "name": "Blue Dog Coalition",
+    "shortName": "Blue Dogs",
+    "type": "formal_caucus",
+    "officialUrl": "https://bluedogs-gluesenkampperez.house.gov/about"
+  },
+  {
+    "id": "blue_dog_pac",
+    "name": "Blue Dog PAC",
+    "shortName": "Blue Dog PAC",
+    "type": "pac",
+    "officialUrl": "https://bluedogdems.com/"
+  },
+  {
+    "id": "dsa_national",
+    "name": "Democratic Socialists of America",
+    "shortName": "DSA",
+    "type": "movement_organization",
+    "officialUrl": "https://www.dsausa.org/"
+  },
+  {
+    "id": "nyc_dsa",
+    "name": "New York City Democratic Socialists of America",
+    "shortName": "NYC-DSA",
+    "type": "movement_organization",
+    "officialUrl": "https://socialists.nyc/"
+  },
+  {
+    "id": "justice_democrats",
+    "name": "Justice Democrats",
+    "shortName": "Justice Democrats",
+    "type": "endorsement_organization",
+    "officialUrl": "https://justicedemocrats.com/candidates/"
+  },
+  {
+    "id": "working_families_party",
+    "name": "Working Families Party",
+    "shortName": "WFP",
+    "type": "endorsement_organization",
+    "officialUrl": "https://workingfamilies.org/"
+  },
+  {
+    "id": "our_revolution",
+    "name": "Our Revolution",
+    "shortName": "Our Revolution",
+    "type": "endorsement_organization",
+    "officialUrl": "https://ourrevolution.com/"
+  },
+  {
+    "id": "dccc",
+    "name": "Democratic Congressional Campaign Committee",
+    "shortName": "DCCC",
+    "type": "party_committee",
+    "officialUrl": "https://dccc.org/"
+  },
+  {
+    "id": "dscc",
+    "name": "Democratic Senatorial Campaign Committee",
+    "shortName": "DSCC",
+    "type": "party_committee",
+    "officialUrl": "https://www.dscc.org/"
+  },
+  {
+    "id": "house_democratic_leadership",
+    "name": "House Democratic Leadership",
+    "shortName": "House Democratic leadership",
+    "type": "party_leadership",
+    "officialUrl": "https://democraticleader.house.gov/about-democratic-leadership"
+  },
+  {
+    "id": "senate_democratic_leadership",
+    "name": "Senate Democratic Leadership",
+    "shortName": "Senate Democratic leadership",
+    "type": "party_leadership",
+    "officialUrl": "https://www.democrats.senate.gov/about-senate-dems/our-caucus"
+  }
+]

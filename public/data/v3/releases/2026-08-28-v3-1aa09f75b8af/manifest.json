@@ -1,0 +1,138 @@
+{
+  "releaseId": "2026-08-28-v3-1aa09f75b8af",
+  "title": "Democratic Faction Research Workbench",
+  "scope": "Federal House and Senate activity from 2018 onward; state and local records are labelled contextual case studies.",
+  "schemaVersion": "3.0.0",
+  "methodVersion": "balanced-core-v1",
+  "generatedOn": "2026-08-28",
+  "reviewedThrough": "2026-08-28",
+  "buildCommit": "bd2a11d5e80825017c32aa44d47f8f4560d18421",
+  "immutable": true,
+  "attributionModes": [
+    "full",
+    "confidence_weighted",
+    "split_credit"
+  ],
+  "partitions": [
+    {
+      "path": "data/v3/releases/2026-08-28-v3-1aa09f75b8af/entities/organizations.json",
+      "rowCount": 15,
+      "bytes": 3026,
+      "sha256": "6ae62aed90ec27799f80fb48e2def49b8b057df33d772a1f353315660bbf608f"
+    },
+    {
+      "path": "data/v3/releases/2026-08-28-v3-1aa09f75b8af/entities/camps.json",
+      "rowCount": 5,
+      "bytes": 1593,
+      "sha256": "a1f1b2251695be54881617e579adb6bb7f57797d02aadfe3c78e6b54bf21e4de"
+    },
+    {
+      "path": "data/v3/releases/2026-08-28-v3-1aa09f75b8af/entities/people.json",
+      "rowCount": 2784,
+      "bytes": 861733,
+      "sha256": "083ad066088f40ec1291a6e302d0bd77b2b717f177bf7cc44e895ae17cb8b1bd"
+    },
+    {
+      "path": "data/v3/releases/2026-08-28-v3-1aa09f75b8af/facts/relationships.json",
+      "rowCount": 17,
+      "bytes": 12194,
+      "sha256": "288b1be5294c1dd7e2f43a5fa003c5431ccb096f3e7d50c5140282732254b610"
+    },
+    {
+      "path": "data/v3/releases/2026-08-28-v3-1aa09f75b8af/facts/camp-derivations.json",
+      "rowCount": 16,
+      "bytes": 10776,
+      "sha256": "f90de4ef57b6230a7476918fe83d0f8c4b93f61ab0d95cd0518f4ff0dedf5f01"
+    },
+    {
+      "path": "data/v3/releases/2026-08-28-v3-1aa09f75b8af/facts/contests.json",
+      "rowCount": 1397,
+      "bytes": 1001230,
+      "sha256": "082db6c629b738a39665e8e61ff7ed6d3bed6c007edcd20ba9f41aeab1fa34ce"
+    },
+    {
+      "path": "data/v3/releases/2026-08-28-v3-1aa09f75b8af/facts/candidacies.json",
+      "rowCount": 3427,
+      "bytes": 3293849,
+      "sha256": "22292d845073d38cd58205905c0060032dbde87a997c86ac958b2d8043a8ac9f"
+    },
+    {
+      "path": "data/v3/releases/2026-08-28-v3-1aa09f75b8af/facts/election-results.json",
+      "rowCount": 3511,
+      "bytes": 4460577,
+      "sha256": "873b3a97ac1d9f90425fb826dc463d5ac346321114d0a2c362b67f2999b67abc"
+    },
+    {
+      "path": "data/v3/releases/2026-08-28-v3-1aa09f75b8af/facts/source-observations.json",
+      "rowCount": 3640,
+      "bytes": 4565541,
+      "sha256": "927d0c3b126db0950a95a58750bd0cfa965f406f53ca010fe59073687cda074d"
+    },
+    {
+      "path": "data/v3/releases/2026-08-28-v3-1aa09f75b8af/metrics/definitions.json",
+      "rowCount": 23,
+      "bytes": 21767,
+      "sha256": "49f4ad3f34239a228206985e53b614049b8fa8b79bd6e54925a8f4fdd5474a52"
+    },
+    {
+      "path": "data/v3/releases/2026-08-28-v3-1aa09f75b8af/metrics/observations.json",
+      "rowCount": 69,
+      "bytes": 49757,
+      "sha256": "6b5db443ed3d6ab2b8dc689fcb7fe30c3f16941d1aa13c8829f91b5693d8fd16"
+    },
+    {
+      "path": "data/v3/releases/2026-08-28-v3-1aa09f75b8af/metrics/balanced-core-v1.json",
+      "rowCount": 1,
+      "bytes": 40720,
+      "sha256": "9edb234295cf22f43758fd9ffb55ef85408e1ca9cfa93d82ce8ed156b171c796"
+    },
+    {
+      "path": "data/v3/releases/2026-08-28-v3-1aa09f75b8af/sources/sources.json",
+      "rowCount": 72,
+      "bytes": 34101,
+      "sha256": "b6cfd58bdaaf6941a6f3bf1609646a4512ae891a8b648679464e9c17e388206e"
+    },
+    {
+      "path": "data/v3/releases/2026-08-28-v3-1aa09f75b8af/sources/documents.json",
+      "rowCount": 72,
+      "bytes": 29191,
+      "sha256": "9f575a6f5f236554ae34e29e86935d7197bb23ee3a41846f7a2b2ddb74814df9"
+    },
+    {
+      "path": "data/v3/releases/2026-08-28-v3-1aa09f75b8af/sources/evidence.json",
+      "rowCount": 3673,
+      "bytes": 1859150,
+      "sha256": "bd2239fe5cd750bdc89a683278681d0f22f9b8251d094769ca5aa1b516ef5675"
+    },
+    {
+      "path": "data/v3/releases/2026-08-28-v3-1aa09f75b8af/quality/coverage.json",
+      "rowCount": 1,
+      "bytes": 6251,
+      "sha256": "74131a4c80e8b2e377f77f35ae76c76fd9ce0dfc5785817472fcec0745cdf6c0"
+    },
+    {
+      "path": "data/v3/releases/2026-08-28-v3-1aa09f75b8af/context/legacy-v2.1.json",
+      "rowCount": 1,
+      "bytes": 28446,
+      "sha256": "12a7b0fee03e260cab01218102318775a32bdb39ce5dbd7a169c8fe57a4bb147"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "downloads/2026-08-28-v3-1aa09f75b8af/democratic-factions.sqlite",
+      "bytes": 20856832,
+      "sha256": "1061a44f97910e49f59f2b07f7f67215859b9f216740a4c1f58e8a2d2e4921eb"
+    },
+    {
+      "path": "downloads/2026-08-28-v3-1aa09f75b8af/core-csv.zip",
+      "bytes": 718120,
+      "sha256": "540628751cc1dcbb99a19c8edc87f1868e931af375a9180b2c6488770e9f3151"
+    }
+  ],
+  "corrections": [
+    "Replaces v2.1 within-visible-camp min-max scoring with fixed provisional anchors and explicit coverage gates.",
+    "Preserves missing FEC values as null rather than zero.",
+    "Separates raw FEC source rows, advancement markers, party selection, and nomination-winner claims.",
+    "Publishes the absence of a comparable 2024 FEC congressional results workbook as a coverage gap."
+  ]
+}

@@ -1,0 +1,322 @@
+[
+  {
+    "id": "derived-rel_mcbride_cpc_incoming-cpc_aligned",
+    "personId": "sarah_mcbride",
+    "campId": "cpc_aligned",
+    "type": "derived_camp",
+    "validFrom": "2024-11-11",
+    "validTo": null,
+    "cycle": null,
+    "sourceDate": "2024-11-11",
+    "observedAt": "2024-11-11T12:00:00Z",
+    "supersededAt": null,
+    "evidenceGrade": "C",
+    "evidenceWeight": 1,
+    "reviewStatus": "derived_from_reviewed_evidence",
+    "reviewer": "research-editorial",
+    "rationale": "taxonomy-v1 maps congressional_progressive_caucus incoming_caucus_member to cpc_aligned; endorsement remains distinct from membership.",
+    "sourceRelationshipIds": [
+      "rel_mcbride_cpc_incoming"
+    ]
+  },
+  {
+    "id": "derived-rel_mcbride_ndc-new_dem_aligned",
+    "personId": "sarah_mcbride",
+    "campId": "new_dem_aligned",
+    "type": "derived_camp",
+    "validFrom": "2025-01-03",
+    "validTo": null,
+    "cycle": null,
+    "sourceDate": "2025-01-03",
+    "observedAt": "2025-01-03T12:00:00Z",
+    "supersededAt": null,
+    "evidenceGrade": "C",
+    "evidenceWeight": 1,
+    "reviewStatus": "derived_from_reviewed_evidence",
+    "reviewer": "research-editorial",
+    "rationale": "taxonomy-v1 maps new_democrat_coalition caucus_member to new_dem_aligned; endorsement remains distinct from membership.",
+    "sourceRelationshipIds": [
+      "rel_mcbride_ndc"
+    ]
+  },
+  {
+    "id": "derived-rel_gray_dccc_2024-party_network",
+    "personId": "adam_gray",
+    "campId": "party_network",
+    "type": "derived_camp",
+    "validFrom": "2024-01-29",
+    "validTo": null,
+    "cycle": 2024,
+    "sourceDate": "2024-01-29",
+    "observedAt": "2024-01-29T12:00:00Z",
+    "supersededAt": null,
+    "evidenceGrade": "C",
+    "evidenceWeight": 1,
+    "reviewStatus": "derived_from_reviewed_evidence",
+    "reviewer": "research-editorial",
+    "rationale": "taxonomy-v1 maps dccc party_program_selectee to party_network; endorsement remains distinct from membership.",
+    "sourceRelationshipIds": [
+      "rel_gray_dccc_2024"
+    ]
+  },
+  {
+    "id": "derived-rel_gray_dccc_2026-party_network",
+    "personId": "adam_gray",
+    "campId": "party_network",
+    "type": "derived_camp",
+    "validFrom": null,
+    "validTo": null,
+    "cycle": 2026,
+    "sourceDate": null,
+    "observedAt": "2026-08-28T12:00:00Z",
+    "supersededAt": null,
+    "evidenceGrade": "C",
+    "evidenceWeight": 1,
+    "reviewStatus": "derived_from_reviewed_evidence",
+    "reviewer": "research-editorial",
+    "rationale": "taxonomy-v1 maps dccc party_program_selectee to party_network; endorsement remains distinct from membership.",
+    "sourceRelationshipIds": [
+      "rel_gray_dccc_2026"
+    ]
+  },
+  {
+    "id": "derived-rel_gray_ndc-new_dem_aligned",
+    "personId": "adam_gray",
+    "campId": "new_dem_aligned",
+    "type": "derived_camp",
+    "validFrom": "2025-01-03",
+    "validTo": null,
+    "cycle": null,
+    "sourceDate": "2025-01-03",
+    "observedAt": "2025-01-03T12:00:00Z",
+    "supersededAt": null,
+    "evidenceGrade": "C",
+    "evidenceWeight": 1,
+    "reviewStatus": "derived_from_reviewed_evidence",
+    "reviewer": "research-editorial",
+    "rationale": "taxonomy-v1 maps new_democrat_coalition caucus_member to new_dem_aligned; endorsement remains distinct from membership.",
+    "sourceRelationshipIds": [
+      "rel_gray_ndc"
+    ]
+  },
+  {
+    "id": "derived-rel_gray_blue_dog-blue_dog_aligned",
+    "personId": "adam_gray",
+    "campId": "blue_dog_aligned",
+    "type": "derived_camp",
+    "validFrom": "2025-02-10",
+    "validTo": null,
+    "cycle": null,
+    "sourceDate": "2025-02-10",
+    "observedAt": "2025-02-10T12:00:00Z",
+    "supersededAt": null,
+    "evidenceGrade": "C",
+    "evidenceWeight": 1,
+    "reviewStatus": "derived_from_reviewed_evidence",
+    "reviewer": "research-editorial",
+    "rationale": "taxonomy-v1 maps blue_dog_coalition caucus_member to blue_dog_aligned; endorsement remains distinct from membership.",
+    "sourceRelationshipIds": [
+      "rel_gray_blue_dog"
+    ]
+  },
+  {
+    "id": "derived-rel_gray_blue_dog_whip-blue_dog_aligned",
+    "personId": "adam_gray",
+    "campId": "blue_dog_aligned",
+    "type": "derived_camp",
+    "validFrom": "2025-02-10",
+    "validTo": "2027-01-03",
+    "cycle": null,
+    "sourceDate": "2025-02-10",
+    "observedAt": "2025-02-10T12:00:00Z",
+    "supersededAt": null,
+    "evidenceGrade": "C",
+    "evidenceWeight": 1,
+    "reviewStatus": "derived_from_reviewed_evidence",
+    "reviewer": "research-editorial",
+    "rationale": "taxonomy-v1 maps blue_dog_coalition caucus_officer to blue_dog_aligned; endorsement remains distinct from membership.",
+    "sourceRelationshipIds": [
+      "rel_gray_blue_dog_whip"
+    ]
+  },
+  {
+    "id": "derived-rel_aoc_dsa_national_2024-movement_left_network",
+    "personId": "alexandria_ocasio_cortez",
+    "campId": "movement_left_network",
+    "type": "derived_camp",
+    "validFrom": "2024-06-23",
+    "validTo": "2024-07-10",
+    "cycle": null,
+    "sourceDate": "2024-07-10",
+    "observedAt": "2024-07-10T12:00:00Z",
+    "supersededAt": null,
+    "evidenceGrade": "C",
+    "evidenceWeight": 1,
+    "reviewStatus": "derived_from_reviewed_evidence",
+    "reviewer": "research-editorial",
+    "rationale": "taxonomy-v1 maps dsa_national conditional_endorsement to movement_left_network; endorsement remains distinct from membership.",
+    "sourceRelationshipIds": [
+      "rel_aoc_dsa_national_2024"
+    ]
+  },
+  {
+    "id": "derived-rel_aoc_nyc_dsa_2024-movement_left_network",
+    "personId": "alexandria_ocasio_cortez",
+    "campId": "movement_left_network",
+    "type": "derived_camp",
+    "validFrom": null,
+    "validTo": null,
+    "cycle": null,
+    "sourceDate": "2024-07-10",
+    "observedAt": "2024-07-10T12:00:00Z",
+    "supersededAt": null,
+    "evidenceGrade": "C",
+    "evidenceWeight": 1,
+    "reviewStatus": "derived_from_reviewed_evidence",
+    "reviewer": "research-editorial",
+    "rationale": "taxonomy-v1 maps nyc_dsa chapter_endorsement to movement_left_network; endorsement remains distinct from membership.",
+    "sourceRelationshipIds": [
+      "rel_aoc_nyc_dsa_2024"
+    ]
+  },
+  {
+    "id": "derived-rel_aoc_justice_democrats-movement_left_network",
+    "personId": "alexandria_ocasio_cortez",
+    "campId": "movement_left_network",
+    "type": "derived_camp",
+    "validFrom": null,
+    "validTo": null,
+    "cycle": 2026,
+    "sourceDate": null,
+    "observedAt": "2026-08-28T12:00:00Z",
+    "supersededAt": null,
+    "evidenceGrade": "C",
+    "evidenceWeight": 1,
+    "reviewStatus": "derived_from_reviewed_evidence",
+    "reviewer": "research-editorial",
+    "rationale": "taxonomy-v1 maps justice_democrats official_candidate_roster_entry to movement_left_network; endorsement remains distinct from membership.",
+    "sourceRelationshipIds": [
+      "rel_aoc_justice_democrats"
+    ]
+  },
+  {
+    "id": "derived-rel_aoc_cpc-cpc_aligned",
+    "personId": "alexandria_ocasio_cortez",
+    "campId": "cpc_aligned",
+    "type": "derived_camp",
+    "validFrom": null,
+    "validTo": null,
+    "cycle": null,
+    "sourceDate": null,
+    "observedAt": "2026-08-28T12:00:00Z",
+    "supersededAt": null,
+    "evidenceGrade": "C",
+    "evidenceWeight": 1,
+    "reviewStatus": "derived_from_reviewed_evidence",
+    "reviewer": "research-editorial",
+    "rationale": "taxonomy-v1 maps congressional_progressive_caucus caucus_member to cpc_aligned; endorsement remains distinct from membership.",
+    "sourceRelationshipIds": [
+      "rel_aoc_cpc"
+    ]
+  },
+  {
+    "id": "derived-rel_tran_dccc_2024-party_network",
+    "personId": "derek_tran",
+    "campId": "party_network",
+    "type": "derived_camp",
+    "validFrom": "2024-03-28",
+    "validTo": null,
+    "cycle": 2024,
+    "sourceDate": "2024-03-28",
+    "observedAt": "2024-03-28T12:00:00Z",
+    "supersededAt": null,
+    "evidenceGrade": "C",
+    "evidenceWeight": 1,
+    "reviewStatus": "derived_from_reviewed_evidence",
+    "reviewer": "research-editorial",
+    "rationale": "taxonomy-v1 maps dccc party_program_selectee to party_network; endorsement remains distinct from membership.",
+    "sourceRelationshipIds": [
+      "rel_tran_dccc_2024"
+    ]
+  },
+  {
+    "id": "derived-rel_tran_dccc_2026-party_network",
+    "personId": "derek_tran",
+    "campId": "party_network",
+    "type": "derived_camp",
+    "validFrom": null,
+    "validTo": null,
+    "cycle": 2026,
+    "sourceDate": null,
+    "observedAt": "2026-08-28T12:00:00Z",
+    "supersededAt": null,
+    "evidenceGrade": "C",
+    "evidenceWeight": 1,
+    "reviewStatus": "derived_from_reviewed_evidence",
+    "reviewer": "research-editorial",
+    "rationale": "taxonomy-v1 maps dccc party_program_selectee to party_network; endorsement remains distinct from membership.",
+    "sourceRelationshipIds": [
+      "rel_tran_dccc_2026"
+    ]
+  },
+  {
+    "id": "derived-rel_tran_ndc-new_dem_aligned",
+    "personId": "derek_tran",
+    "campId": "new_dem_aligned",
+    "type": "derived_camp",
+    "validFrom": "2025-01-03",
+    "validTo": null,
+    "cycle": null,
+    "sourceDate": "2025-01-03",
+    "observedAt": "2025-01-03T12:00:00Z",
+    "supersededAt": null,
+    "evidenceGrade": "C",
+    "evidenceWeight": 1,
+    "reviewStatus": "derived_from_reviewed_evidence",
+    "reviewer": "research-editorial",
+    "rationale": "taxonomy-v1 maps new_democrat_coalition caucus_member to new_dem_aligned; endorsement remains distinct from membership.",
+    "sourceRelationshipIds": [
+      "rel_tran_ndc"
+    ]
+  },
+  {
+    "id": "derived-rel_engel_dccc_2022-party_network",
+    "personId": "kirsten_engel",
+    "campId": "party_network",
+    "type": "derived_camp",
+    "validFrom": "2022-09-01",
+    "validTo": null,
+    "cycle": 2022,
+    "sourceDate": "2022-09-01",
+    "observedAt": "2022-09-01T12:00:00Z",
+    "supersededAt": null,
+    "evidenceGrade": "C",
+    "evidenceWeight": 1,
+    "reviewStatus": "derived_from_reviewed_evidence",
+    "reviewer": "research-editorial",
+    "rationale": "taxonomy-v1 maps dccc party_program_selectee to party_network; endorsement remains distinct from membership.",
+    "sourceRelationshipIds": [
+      "rel_engel_dccc_2022"
+    ]
+  },
+  {
+    "id": "derived-rel_engel_dccc_2024-party_network",
+    "personId": "kirsten_engel",
+    "campId": "party_network",
+    "type": "derived_camp",
+    "validFrom": "2024-01-29",
+    "validTo": null,
+    "cycle": 2024,
+    "sourceDate": "2024-01-29",
+    "observedAt": "2024-01-29T12:00:00Z",
+    "supersededAt": null,
+    "evidenceGrade": "C",
+    "evidenceWeight": 1,
+    "reviewStatus": "derived_from_reviewed_evidence",
+    "reviewer": "research-editorial",
+    "rationale": "taxonomy-v1 maps dccc party_program_selectee to party_network; endorsement remains distinct from membership.",
+    "sourceRelationshipIds": [
+      "rel_engel_dccc_2024"
+    ]
+  }
+]
