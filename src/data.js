@@ -4,7 +4,7 @@ window.CROSSCURRENTS_DATA = {
     "title": "Democratic Power Index",
     "subtitle": "Who is gaining ground inside the Democratic coalition?",
     "editorialAsOf": "2026-08-28",
-    "generatedOn": "2026-08-28",
+    "generatedOn": "2026-08-31",
     "cycle": "2025–2026",
     "methodVersion": "2.1",
     "scope": "Three formal House ideological caucuses, plus a separate broad-wing primary tracker",
@@ -293,9 +293,9 @@ window.CROSSCURRENTS_DATA = {
       "format": "currency",
       "included": true,
       "values": {
-        "progressive": 304820.09,
-        "newdem": 218147.12,
-        "bluedog": 99471.77
+        "progressive": 304820.0884210526,
+        "newdem": 218147.1189473684,
+        "bluedog": 99471.7652631579
       },
       "asOf": "2026-07-31",
       "sources": [
@@ -373,9 +373,9 @@ window.CROSSCURRENTS_DATA = {
       "format": "percent",
       "included": false,
       "values": {
-        "progressive": 72.92,
-        "newdem": 10.09,
-        "bluedog": 29.72
+        "progressive": 72.91496666421801,
+        "newdem": 10.093458915887608,
+        "bluedog": 29.71962621854277
       },
       "asOf": "2026-07-31",
       "sources": [
@@ -453,9 +453,9 @@ window.CROSSCURRENTS_DATA = {
       "format": "currency",
       "included": false,
       "values": {
-        "progressive": 57342.39,
-        "newdem": 36357.85,
-        "bluedog": 188996.35
+        "progressive": 57342.39287128713,
+        "newdem": 36357.85315789474,
+        "bluedog": 188996.354
       },
       "asOf": "2026-07-31",
       "sources": [
@@ -1141,6 +1141,124 @@ window.CROSSCURRENTS_DATA = {
           "progressive": 57342.39,
           "newdem": 36357.85,
           "bluedog": 188996.35
+        },
+        "agenda_breadth": {
+          "progressive": 10,
+          "newdem": 11,
+          "bluedog": 4
+        },
+        "current_policy_outputs": {
+          "progressive": 10,
+          "newdem": 31,
+          "bluedog": 4
+        },
+        "documented_policy_wins_90d": {
+          "progressive": 0,
+          "newdem": 0,
+          "bluedog": 1
+        },
+        "recent_win_points": {
+          "progressive": 14,
+          "newdem": 6,
+          "bluedog": 6
+        },
+        "source_coverage": {
+          "progressive": 13,
+          "newdem": 10,
+          "bluedog": 9
+        }
+      }
+    },
+    {
+      "date": "2026-08-31",
+      "label": "Automated FEC refresh",
+      "editorialAsOf": "2026-08-28",
+      "fecAsOf": "2026-07-31",
+      "metrics": {
+        "published_members": {
+          "progressive": 101,
+          "newdem": 114,
+          "bluedog": 10
+        },
+        "democratic_leadership_offices": {
+          "progressive": 8,
+          "newdem": 6,
+          "bluedog": 0
+        },
+        "standing_committee_ranking_members": {
+          "progressive": 12,
+          "newdem": 6,
+          "bluedog": 0
+        },
+        "membership_change_floor": {
+          "progressive": 1,
+          "newdem": 4,
+          "bluedog": 0
+        },
+        "freshman_119": {
+          "progressive": 7,
+          "newdem": 25,
+          "bluedog": null
+        },
+        "endorsed_candidates_2026": {
+          "progressive": 25,
+          "newdem": 34,
+          "bluedog": 12
+        },
+        "known_primary_wins_2026": {
+          "progressive": 3,
+          "newdem": 3,
+          "bluedog": 1
+        },
+        "red_to_blue_2026": {
+          "progressive": null,
+          "newdem": 20,
+          "bluedog": 4
+        },
+        "pac_receipts_monthly": {
+          "progressive": 304820.0884210526,
+          "newdem": 218147.1189473684,
+          "bluedog": 99471.7652631579
+        },
+        "pac_total_receipts": {
+          "progressive": 5791581.68,
+          "newdem": 4144795.26,
+          "bluedog": 1889963.54
+        },
+        "pac_disbursements": {
+          "progressive": 6751574.25,
+          "newdem": 3392784.38,
+          "bluedog": 1871591.89
+        },
+        "individual_contribution_share": {
+          "progressive": 82.75,
+          "newdem": 25.19,
+          "bluedog": 23.59
+        },
+        "unitemized_individual_share": {
+          "progressive": 72.91496666421801,
+          "newdem": 10.093458915887608,
+          "bluedog": 29.71962621854277
+        },
+        "independent_expenditures": {
+          "progressive": 2362130.5,
+          "newdem": 0,
+          "bluedog": 0
+        },
+        "candidate_contributions": {
+          "progressive": 575000,
+          "newdem": 645000,
+          "bluedog": 298500
+        },
+        "cash_on_hand": {
+          "progressive": 142374.69,
+          "newdem": 990766.43,
+          "bluedog": 234136.68
+        },
+        "receipts_per_member": {
+          "progressive": 57342.39287128713,
+          "newdem": 36357.85315789474,
+          "bluedog": 188996.354
         },
         "agenda_breadth": {
           "progressive": 10,
