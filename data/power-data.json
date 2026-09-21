@@ -3,7 +3,7 @@
     "title": "Democratic Power Index",
     "subtitle": "Who is gaining ground inside the Democratic coalition?",
     "editorialAsOf": "2026-08-28",
-    "generatedOn": "2026-09-14",
+    "generatedOn": "2026-09-21",
     "cycle": "2025–2026",
     "methodVersion": "2.1",
     "scope": "Three formal House ideological caucuses, plus a separate broad-wing primary tracker",
@@ -16,11 +16,11 @@
       },
       "fec": {
         "label": "Affiliated PAC finance",
-        "asOf": "2026-07-31",
+        "asOf": "2026-08-31",
         "updateMode": "Weekly automated refresh",
         "coverageByFaction": {
-          "progressive": "2026-07-31",
-          "newdem": "2026-07-31",
+          "progressive": "2026-08-31",
+          "newdem": "2026-08-31",
           "bluedog": "2026-08-31"
         }
       },
@@ -292,11 +292,11 @@
       "format": "currency",
       "included": true,
       "values": {
-        "progressive": 304820.0884210526,
-        "newdem": 218147.1189473684,
+        "progressive": 307043.02599999995,
+        "newdem": 214991.0905,
         "bluedog": 97187.412
       },
-      "asOf": "2026-07-31",
+      "asOf": "2026-08-31",
       "sources": [
         "fec-cpc",
         "fec-ndc",
@@ -312,11 +312,11 @@
       "format": "currency",
       "included": false,
       "values": {
-        "progressive": 5791581.68,
-        "newdem": 4144795.26,
+        "progressive": 6140860.52,
+        "newdem": 4299821.81,
         "bluedog": 1943748.24
       },
-      "asOf": "2026-07-31",
+      "asOf": "2026-08-31",
       "sources": [
         "fec-cpc",
         "fec-ndc",
@@ -332,11 +332,11 @@
       "format": "currency",
       "included": false,
       "values": {
-        "progressive": 6751574.25,
-        "newdem": 3392784.38,
+        "progressive": 7065618.54,
+        "newdem": 3557368.21,
         "bluedog": 1967000.83
       },
-      "asOf": "2026-07-31",
+      "asOf": "2026-08-31",
       "sources": [
         "fec-cpc",
         "fec-ndc",
@@ -352,11 +352,11 @@
       "format": "percent",
       "included": true,
       "values": {
-        "progressive": 82.75,
-        "newdem": 25.19,
+        "progressive": 81.78,
+        "newdem": 25.25,
         "bluedog": 24.75
       },
-      "asOf": "2026-07-31",
+      "asOf": "2026-08-31",
       "sources": [
         "fec-cpc",
         "fec-ndc",
@@ -372,11 +372,11 @@
       "format": "percent",
       "included": false,
       "values": {
-        "progressive": 72.91496666421801,
-        "newdem": 10.093458915887608,
+        "progressive": 72.54042973181157,
+        "newdem": 10.211733566764298,
         "bluedog": 31.644965132784126
       },
-      "asOf": "2026-07-31",
+      "asOf": "2026-08-31",
       "sources": [
         "fec-cpc",
         "fec-ndc",
@@ -392,11 +392,11 @@
       "format": "currency",
       "included": true,
       "values": {
-        "progressive": 2362130.5,
+        "progressive": 2437130.5,
         "newdem": 0,
         "bluedog": 0
       },
-      "asOf": "2026-07-31",
+      "asOf": "2026-08-31",
       "sources": [
         "fec-cpc",
         "fec-ndc",
@@ -412,11 +412,11 @@
       "format": "currency",
       "included": true,
       "values": {
-        "progressive": 575000,
-        "newdem": 645000,
+        "progressive": 630000,
+        "newdem": 680000,
         "bluedog": 303500
       },
-      "asOf": "2026-07-31",
+      "asOf": "2026-08-31",
       "sources": [
         "fec-cpc",
         "fec-ndc",
@@ -432,11 +432,11 @@
       "format": "currency",
       "included": false,
       "values": {
-        "progressive": 142374.69,
-        "newdem": 990766.43,
+        "progressive": 177609.24,
+        "newdem": 981209.15,
         "bluedog": 192512.44
       },
-      "asOf": "2026-07-31",
+      "asOf": "2026-08-31",
       "sources": [
         "fec-cpc",
         "fec-ndc",
@@ -452,11 +452,11 @@
       "format": "currency",
       "included": false,
       "values": {
-        "progressive": 57342.39287128713,
-        "newdem": 36357.85315789474,
+        "progressive": 60800.599207920786,
+        "newdem": 37717.735175438596,
         "bluedog": 194374.824
       },
-      "asOf": "2026-07-31",
+      "asOf": "2026-08-31",
       "sources": [
         "fec-cpc",
         "fec-ndc",
@@ -1493,6 +1493,124 @@
         "receipts_per_member": {
           "progressive": 57342.39287128713,
           "newdem": 36357.85315789474,
+          "bluedog": 194374.824
+        },
+        "agenda_breadth": {
+          "progressive": 10,
+          "newdem": 11,
+          "bluedog": 4
+        },
+        "current_policy_outputs": {
+          "progressive": 10,
+          "newdem": 31,
+          "bluedog": 4
+        },
+        "documented_policy_wins_90d": {
+          "progressive": 0,
+          "newdem": 0,
+          "bluedog": 1
+        },
+        "recent_win_points": {
+          "progressive": 14,
+          "newdem": 6,
+          "bluedog": 6
+        },
+        "source_coverage": {
+          "progressive": 13,
+          "newdem": 10,
+          "bluedog": 9
+        }
+      }
+    },
+    {
+      "date": "2026-09-21",
+      "label": "Automated FEC refresh",
+      "editorialAsOf": "2026-08-28",
+      "fecAsOf": "2026-08-31",
+      "metrics": {
+        "published_members": {
+          "progressive": 101,
+          "newdem": 114,
+          "bluedog": 10
+        },
+        "democratic_leadership_offices": {
+          "progressive": 8,
+          "newdem": 6,
+          "bluedog": 0
+        },
+        "standing_committee_ranking_members": {
+          "progressive": 12,
+          "newdem": 6,
+          "bluedog": 0
+        },
+        "membership_change_floor": {
+          "progressive": 1,
+          "newdem": 4,
+          "bluedog": 0
+        },
+        "freshman_119": {
+          "progressive": 7,
+          "newdem": 25,
+          "bluedog": null
+        },
+        "endorsed_candidates_2026": {
+          "progressive": 25,
+          "newdem": 34,
+          "bluedog": 12
+        },
+        "known_primary_wins_2026": {
+          "progressive": 3,
+          "newdem": 3,
+          "bluedog": 1
+        },
+        "red_to_blue_2026": {
+          "progressive": null,
+          "newdem": 20,
+          "bluedog": 4
+        },
+        "pac_receipts_monthly": {
+          "progressive": 307043.02599999995,
+          "newdem": 214991.0905,
+          "bluedog": 97187.412
+        },
+        "pac_total_receipts": {
+          "progressive": 6140860.52,
+          "newdem": 4299821.81,
+          "bluedog": 1943748.24
+        },
+        "pac_disbursements": {
+          "progressive": 7065618.54,
+          "newdem": 3557368.21,
+          "bluedog": 1967000.83
+        },
+        "individual_contribution_share": {
+          "progressive": 81.78,
+          "newdem": 25.25,
+          "bluedog": 24.75
+        },
+        "unitemized_individual_share": {
+          "progressive": 72.54042973181157,
+          "newdem": 10.211733566764298,
+          "bluedog": 31.644965132784126
+        },
+        "independent_expenditures": {
+          "progressive": 2437130.5,
+          "newdem": 0,
+          "bluedog": 0
+        },
+        "candidate_contributions": {
+          "progressive": 630000,
+          "newdem": 680000,
+          "bluedog": 303500
+        },
+        "cash_on_hand": {
+          "progressive": 177609.24,
+          "newdem": 981209.15,
+          "bluedog": 192512.44
+        },
+        "receipts_per_member": {
+          "progressive": 60800.599207920786,
+          "newdem": 37717.735175438596,
           "bluedog": 194374.824
         },
         "agenda_breadth": {
